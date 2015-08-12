@@ -242,6 +242,7 @@ th {
   select {
     background: #fff !important;
   }
+  
   .navbar {
     display: none;
   }
@@ -6976,13 +6977,11 @@ body {
 }
 /* Hero :: Agency */
 .hero_agency {
-  background-image: url(../img/bg_white.png);
   text-align: center;
 }
 /* Hero :: Sign Up */
 .hero_sign-up {
   padding-bottom: 388px;
-  background-image: url(../img/bg_2.jpg);
   text-align: center;
 }
 @media (min-width: 768px) {
