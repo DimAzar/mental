@@ -1,13 +1,13 @@
 /*------------------------------------------------------------------
-Project:        Landitt
-Author:         Yevgeny Simzikov
-URL:            http://simpleqode.com/
-                https://twitter.com/YevSim
-                https://www.facebook.com/simpleqode
-Version:        1.0.0
-Created:        27/05/2015
-Last change:    27/05/2015
--------------------------------------------------------------------*/
+ Project:        Landitt
+ Author:         Yevgeny Simzikov
+ URL:            http://simpleqode.com/
+ https://twitter.com/YevSim
+ https://www.facebook.com/simpleqode
+ Version:        1.0.0
+ Created:        27/05/2015
+ Last change:    27/05/2015
+ -------------------------------------------------------------------*/
 
 /**
  * Navigation
@@ -41,6 +41,17 @@ $('.wrapper .navbar-collapse').on('hide.bs.collapse', function () {
     $(".navbar").toggleClass("js-toggleClass js-noToggleClass");
 });
 
+
+/* Sidebar */
+
+$(".js-toggle-sidebar").on('click', function() {
+    $(".wrapper").toggleClass("js-wrapper-aside");
+    $(".navbar").toggleClass("js-navbar-aside");
+    $(".sidebar").toggleClass("js-sidebar-aside");
+    return false;
+});
+
+
 /**
  * Smooth scroll to anchor
  */
@@ -58,6 +69,88 @@ $(function() {
             }
         }
     });
+});
+
+
+/**
+ * Own carousel :: Testimonials
+ */
+
+$(document).ready(function() {
+    var owl = $("#review__carousel");
+    owl.owlCarousel({
+
+        items:              2,
+        itemsDesktop:       [1199,2],
+        itemsDesktopSmall:  [991,2],
+        itemsTablet:        [768,2],
+        itemsTabletSmall:   false,
+        itemsMobile:        [479,1],
+        navigation : true,
+        slideSpeed: 600,
+        pagination: false,
+        navigationText: ['<i class="oi oi-arrow-left"></i>','<i class="oi oi-arrow-right"></i>']
+
+    });
+});
+
+
+/**
+ * Doughnut charts :: Skills
+ */
+
+/* Base donut styles */
+
+$.fn.peity.defaults.donut = {
+    delimiter: null,
+    fill: ["#F67280", "#eee"],
+    height: null,
+    innerRadius: 68,
+    radius: 70,
+    width: null
+};
+
+/* Animating donuts */
+
+$(document).ready(function() {
+    $(".js-skills__item_first").waypoint(function() {
+
+        setTimeout(function () {
+            $('.skills__item').css("visibility", "visible");
+        }, 11);
+
+        $('.skills-item__donut').each(function () {
+            var $this = $(this);
+
+            var updateChart = $this.peity('donut');
+            var text = "";
+            var i = 0;
+            var str = $this.html();
+            var arr = str.split("/");
+            var value = arr[0];
+            var maxValue = arr[1];
+            var step = value/100;
+
+            function myLoop() {
+                setTimeout(function () {
+
+                    text = i + "/" + maxValue;
+
+                    updateChart.text(text)
+                        .change()
+
+                    i = i + step;
+
+                    if (i <= value) myLoop();
+
+                }, 10)
+            }
+            myLoop();
+        });
+
+        this.destroy();
+
+    }, { offset: 'bottom-in-view' });
 });
 
 
