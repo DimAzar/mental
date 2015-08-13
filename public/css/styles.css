@@ -6895,8 +6895,8 @@ body {
 }
 .heading {
   position: relative;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -7022,7 +7022,7 @@ body {
 }
 /* Hero :: App */
 .hero_app {
-  background-image: url(../img/bg_3.jpg);
+  background-image: url(../img/bg_2.jpg);
   text-align: left;
   overflow: hidden;
 }
