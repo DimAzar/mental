@@ -1,4 +1,5 @@
-/*------------------------------------------------------------------
+
+ /*------------------------------------------------------------------
 Project:        Landitt
 Author:         Yevgeny Simzikov
 URL:            http://simpleqode.com/
@@ -6979,6 +6980,7 @@ body {
 .hero_agency {
   text-align: center;
 }
+
 /* Hero :: Sign Up */
 .hero_sign-up {
   padding-bottom: 388px;
@@ -7429,6 +7431,7 @@ body {
   padding-right: 10px;
 }
 .review-item__quot {
+  height: 100px;
   position: relative;
   margin-bottom: 20px;
   padding: 15px;
