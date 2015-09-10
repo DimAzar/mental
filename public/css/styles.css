@@ -4166,9 +4166,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  font-size: 17px;
-  line-height: 23px;
-  height: 70px;
+  padding-top: 10px;
 }
 
 .navbar-brand:hover,
@@ -4400,11 +4398,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: white;
 }
 .navbar-default .navbar-nav > li > a {
-  color: rgb(200,200,200);
+  color: crimson;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #f67280;
+  color: black;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -6703,7 +6701,7 @@ button.close {
 }
 .navbar-nav > li > a {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 .navbar-brand {
   font-weight: 700;
@@ -6886,6 +6884,7 @@ html,
 body {
   height: 100% !important;
 }
+
 .wrapper {
   position: relative;
   background: white;
@@ -7731,4 +7730,36 @@ footer a {
   padding-bottom: 40px;
   color: #9a9a9a;
   text-align: center;
+}
+
+/* Sidebars */
+.sidebar { padding-top:36px; padding-bottom:30px; }
+    .sidebar .widget { margin-bottom:20px; }
+    .sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } 
+
+/*SECTION BACKGROUNDS */
+#home {
+	  background: url(../img/bg_1.jpg) center center / cover no-repeat;
+  z-index: -1;   
+	
+}
+
+#company {
+    background-color: rgba(230, 230,230, 0.6);
+}
+
+#services {
+    background-color: rgba(230, 230,230, 0.4);
+}
+
+#articles {
+    background-color: rgba(230, 230,230, 0.2);
+}
+
+#testimonials {
+    background-color: rgba(200, 200,200, 0.4);
+}
+
+#comm {
+    background-color: rgba(200, 200,200, 0.2);
 }
