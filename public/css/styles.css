@@ -7766,3 +7766,87 @@ footer a {
 	width: 30px;
 	height: 40px; 
 }
+
+
+
+/* CUSTOMERS */
+.our-clients-head h3 {
+    color: rgb(51, 51, 51);
+    font-size: 2.9em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+.our-clients {
+    padding: 3.5em 0;
+}
+.our-clients {
+    padding: 2.5em 0;
+}
+.our-clients-head h3 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    margin-bottom: 0.8em;
+}
+.our-clients {
+    padding: 1.5em 0;
+}
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+}
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    position:relative;
+    cursor:pointer;
+}
+.nbs-flexisel-item img {
+    width: 65%;
+    position: relative;
+}
+
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    margin-top:9em;
+}
+.nbs-flexisel-nav-left {
+    left: 24em;
+    background: url('../images/img-sprite.png') no-repeat -75px -176px;
+}
+.nbs-flexisel-nav-right {
+    right: 24em;
+    background: url('../images/img-sprite.png') no-repeat -114px -176px;
+}
+    .nbs-flexisel-nav-left, .nbs-flexisel-nav-right{
+        margin-top:7em;
+    }
+    .nbs-flexisel-nav-left{
+        left:30.5em;
+    }
+    .nbs-flexisel-nav-right{
+        right: 24.5em;
+    }
+    .nbs-flexisel-nav-left{
+        left: 24.5em;
+    }
+
