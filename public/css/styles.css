@@ -4169,6 +4169,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
+  height: 60px;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -7735,6 +7738,7 @@ footer a {
 /*SECTION BACKGROUNDS */
 #home {
     background: url(../img/bg_1.jpg) center center / cover no-repeat;
+    height: 1024px;
 }
 
 #company {
@@ -7751,7 +7755,7 @@ footer a {
 }
 
 #testimonials {
-    background-color: rgba(200, 200,200, 0.4);
+    background-color: rgba(200, 200,250, 0.4);
 }
 
 #comm {
@@ -7808,6 +7812,7 @@ footer a {
     overflow:hidden;
     float:left;
     width:100%;
+    height: 160px;
 }
 .nbs-flexisel-item {
     float:left;
@@ -7831,22 +7836,12 @@ footer a {
 }
 .nbs-flexisel-nav-left {
     left: 24em;
-    background: url('../images/img-sprite.png') no-repeat -75px -176px;
+    background: url('../img/img-sprite.png') no-repeat -75px -176px;
 }
 .nbs-flexisel-nav-right {
     right: 24em;
-    background: url('../images/img-sprite.png') no-repeat -114px -176px;
+    background: url('../img/img-sprite.png') no-repeat -114px -176px;
 }
-    .nbs-flexisel-nav-left, .nbs-flexisel-nav-right{
-        margin-top:7em;
-    }
-    .nbs-flexisel-nav-left{
-        left:30.5em;
-    }
-    .nbs-flexisel-nav-right{
-        right: 24.5em;
-    }
-    .nbs-flexisel-nav-left{
-        left: 24.5em;
-    }
-
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right{
+    margin-top:7em;
+}
