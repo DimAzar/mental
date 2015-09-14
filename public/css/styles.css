@@ -4396,11 +4396,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: white;
 }
 .navbar-default .navbar-nav > li > a {
-  color: crimson;
+  color: red;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: black;
+  color: red;
+  font-size:16px;   
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -4496,13 +4497,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #f67280;
+  color: red;
+  font-size:16px;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #f67280;
+  color: red;
+  font-size:16px;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -7028,32 +7031,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/*
- * Features
- */
-.features__item {
-  text-align: left;
-  margin-bottom: 40px;
-}
-.features-item__icon {
-  float: left;
-  margin-right: 30px;
-  font-size: 26px;
-}
-.features-item__body {
-  overflow: hidden;
-}
-.features-item-body__title {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.features-item-body__summary {
-  color: #9a9a9a;
-}
-.features-item-body__summary a {
-  color: #9a9a9a;
-}
-
 #outerMapDiv {
   height: 90%;
   text-align:center;

@@ -40,8 +40,13 @@ hr {
   margin-bottom: 40px;
   font-weight: 700;
   font-family: Caviar;
-  font-size: 22px;
+  font-size: 32px;
   color: red;
+}
+
+#footer {
+    background-color: gray;	
+    text-align: center;
 }
 
 /* NAVBAR */
@@ -94,6 +99,32 @@ hr {
   }
 }
 
+/*SERVICES  */
+.features__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features-item__icon {
+  float: left;
+  margin-right: 30px;
+  font-size: 26px;
+}
+.features-item__body {
+  overflow: hidden;
+}
+.features-item-body__title {
+	text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.features-item-body__summary {
+  color: #9a9a9a;
+}
+.features-item-body__summary a {
+  color: #9a9a9a;
+}
+
 /*SECTION BACKGROUNDS */
 #home {
     background: url(../img/bg_1.jpg) center center / cover no-repeat;
@@ -105,12 +136,11 @@ hr {
 }
 
 #services {
-    background-color: rgba(230, 230,230, 0.2);
 	}
 
 #articles {
 	background: url(../img/MGlogo.jpg) center center / cover no-repeat;
-	min-height: 800px;
+	min-height: 600px;
 }
 
 #testimonials {
@@ -230,6 +260,8 @@ hr {
 }
 
 .timeline .timeline-heading h4.subheading {
+	font-weight: bold;
+	color: red;
     text-transform: none;
 }
 
