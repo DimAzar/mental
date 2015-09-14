@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../ico/favicon.ico">
+    <link rel="icon" href="../img/MGlogo.jpg">
 
     <title>Mental Group S.A</title>
 
@@ -20,7 +20,8 @@
 
     <!-- CSS Custom -->
     <link href="../css/styles.css" rel="stylesheet">
-
+    <link href="../css/mental.css" rel="stylesheet">
+    
     <script src="../js/lib/jquery-1.11.2.js"></script>
     <script defer src="../js/bootstrap/bootstrap.min.js"></script>
 
@@ -45,14 +46,6 @@
     <script src="../js/plugins/jquery.peity.min.js"></script>
     <script src="../js/plugins/lightbox.min.js"></script>
     <script src="../js/plugins/contact.js"></script>
-
-    <script>
-      $(window).on('resize', function() {
-          var currCenter = map.getCenter();
-          google.maps.event.trigger(map, 'resize');
-          map.setCenter(currCenter);
-      })
-    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -130,36 +123,88 @@
         </div> <!-- / .container -->
       <!--  END LANDING PAGE -->
       
-      <!-- GOOGLE MAPS -->
-      <div id="company" class="section">
-        <div class="row text-center">
-           <br class="col-xs-12">
-           <h4 class="heading">ΕΤΑΙΡΕΊΑ</h4>
-           
-           <div class="row">
-           Οι εταιρείες MENTAL ΣΥΜΒΟΥΛΕΥΤΙΚΗ Α.Ε. και Γ. ΧΡΙΣΤΟΠΟΥΛΟΣ &amp; ΣΥΝΕΡΓΑΤΕΣ Ε.Ε., από το 1999 λειτουργούν ως ενιαίο group συμβούλων επιχειρήσεων (MENTAL GROUP), έχοντας ως κύριες δραστηριότητες τους την παροχή λογιστικών, φοροτεχνικών, συμβουλευτικών και μελετητικών υπηρεσιών σε επιχειρήσεις (φυσικά ή νομικά πρόσωπα) και Οργανισμούς, με ιδιαίτερη έμφαση στους τομείς<br><br>
-           <p class="heading__sub" style="font-weight: bold; color: red">
-             Της ίδρυσης και της οργάνωσης ή αναδιοργάνωσης τους<br>
-             Της φοροτεχνικής εποπτείας και της λογιστικής τους παρακολούθησης<br>
-             Του ποιοτικού έλεγχου<br>
-             Της διαχείρισης, της διοίκησης και του marketing<br>
-             Της χρηματοδότησής τους<br>
-             Της ένταξης τους σε Αναπτυξιακούς Νόμους και άλλα επιδοτούμενα προγράμματα<br>
-           </p>
-           <p class="heading__sub"> Κάνοντας πράξη την ευελιξία για την ικανοποίηση των παραπάνω αναγκών των πελατών μας, λειτουργούμε με τρία συνεργαζόμενα αλλά διακριτά τμήματα παροχής υπηρεσιών (Λογιστικό – Φοροτεχνικό/Συμβουλευτικό και Μελετητικό), γεγονός που επιτρέπει στους έμπειρους συνεργάτες μας να δραστηριοποιούνται συστηματικά στον τομέα ειδίκευσής τους, ενώ παράλληλα να έχουν άμεσα τη δυνατότητα στενής συνεργασίας με τους συναδέλφους τους από άλλες ειδικότητες, όταν και όποτε αυτό απαιτείται.</p>
-           <p class="heading__sub"> Με το παραπάνω σχήμα συνέργειας προσφέρουμε ολοκληρωμένες υπηρεσίες, εξατομικευμένες συμβουλές και εμπεριστατωμένες λύσεις, πάντα με γνώμονα την επίτευξη ουσιαστικών και μετρήσιμων, θετικών αποτελεσμάτων για τον πελάτη.</p>
-           <p class="heading__sub"> Έτσι στοχεύουμε στρατηγικά, όχι μόνο στην επίλυση των όποιων προβλημάτων αντιμετωπίζουν οι επιχειρήσεις σήμερα, αλλά και στην ανάδειξη και αξιοποίηση νέων ευκαιριών που πιθανόν να βρίσκονται μέσα στην ίδια την επιχειρηματική οντότητα, τo τοπικό ή και το διεθνές περιβάλλον στο οποίο αυτή δραστηριοποιείται.</p>
-           <p class="heading__sub"> Με γνώμονα πάντα τις ανάγκες της εκάστοτε επιχείρησης και εφαλτήριο τον υψηλό επαγγελματισμό, την κατάρτιση και την εμπειρία μας, τα τελευταία 15 χρόνια διασφαλίζουμε την απόλυτη ικανοποίηση των πελατών μας, καθώς και την επιτυχή ολοκλήρωση του συνόλου των έργων τα οποία αναλαμβάνουμε.</p>
-           </div>
+      <section id="company" class="section">
+        <div class="container text-center">
+          <h4 class="heading">Η Εταιρεία μας</h4>
+          <hr class="text-center">
+          
+          Οι εταιρείες MENTAL ΣΥΜΒΟΥΛΕΥΤΙΚΗ Α.Ε. και Γ. ΧΡΙΣΤΟΠΟΥΛΟΣ &amp; ΣΥΝΕΡΓΑΤΕΣ Ε.Ε., από το 1999 λειτουργούν ως ενιαίο group συμβούλων επιχειρήσεων (MENTAL GROUP), έχοντας ως κύριες δραστηριότητες τους την παροχή λογιστικών, φοροτεχνικών, συμβουλευτικών και μελετητικών υπηρεσιών σε επιχειρήσεις (φυσικά ή νομικά πρόσωπα) και Οργανισμούς, με ιδιαίτερη έμφαση στους τομείς
+             Της ίδρυσης και της οργάνωσης ή αναδιοργάνωσης τους.
+             Της φοροτεχνικής εποπτείας και της λογιστικής τους παρακολούθησης.
+             Του ποιοτικού έλεγχου.
+             Της διαχείρισης, της διοίκησης και του marketing.
+             Της χρηματοδότησής τους.
+             Της ένταξης τους σε Αναπτυξιακούς Νόμους και άλλα επιδοτούμενα προγράμματα.
+          
+          <br><br>
+          <div><br>
+             <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="../img/MGlogo.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4 class="subheading">Κάνοντας πράξη την ευελιξία</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">για την ικανοποίηση των παραπάνω αναγκών των πελατών μας, λειτουργούμε με τρία συνεργαζόμενα αλλά διακριτά τμήματα παροχής υπηρεσιών (Λογιστικό – Φοροτεχνικό/Συμβουλευτικό και Μελετητικό), γεγονός που επιτρέπει στους έμπειρους συνεργάτες μας να δραστηριοποιούνται συστηματικά στον τομέα ειδίκευσής τους, ενώ παράλληλα να έχουν άμεσα τη δυνατότητα στενής συνεργασίας με τους συναδέλφους τους από άλλες ειδικότητες, όταν και όποτε αυτό απαιτείται.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="../img/MGlogo.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4 class="subheading">Με το παραπάνω σχήμα συνέργειας</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">προσφέρουμε ολοκληρωμένες υπηρεσίες, εξατομικευμένες συμβουλές και εμπεριστατωμένες λύσεις, πάντα με γνώμονα την επίτευξη ουσιαστικών και μετρήσιμων, θετικών αποτελεσμάτων για τον πελάτη.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="../img/MGlogo.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4 class="subheading">Στοχεύουμε στρατηγικά</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">όχι μόνο στην επίλυση των όποιων προβλημάτων αντιμετωπίζουν οι επιχειρήσεις σήμερα, αλλά και στην ανάδειξη και αξιοποίηση νέων ευκαιριών που πιθανόν να βρίσκονται μέσα στην ίδια την επιχειρηματική οντότητα, τo τοπικό ή και το διεθνές περιβάλλον στο οποίο αυτή δραστηριοποιείται.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="../img/MGlogo.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                          <div class="timeline-heading">
+                            <h4 class="subheading">Με γνώμονα πάντα τις ανάγκες</h4>
+                          </div>
+                          <div class="timeline-body">
+                              <p class="text-muted">της εκάστοτε επιχείρησης και εφαλτήριο τον υψηλό επαγγελματισμό, την κατάρτιση και την εμπειρία μας, τα τελευταία 15 χρόνια διασφαλίζουμε την απόλυτη ικανοποίηση των πελατών μας, καθώς και την επιτυχή ολοκλήρωση του συνόλου των έργων τα οποία αναλαμβάνουμε.</p>
+                          </div>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
         </div>
-      </div>
-      <!-- END GOOGLE MAPS -->
-      
+      </section>
+
       <!-- SERVICES -->
-      <div id="services" class="section" >
+      <section id="services" >
         <div class="container">
         <div class="row">
-          <h4 class="heading">ΥΠΗΡΕΣΊΕΣ</h4>
+          <h4 class="heading">Οι Υπηρεσίες μας</h4>
+          <hr class="text-center">
+
             <div class="col-sm-4">
             <div class="features__item fadeIn">
               <div class="features-item__body">
@@ -208,15 +253,14 @@
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
-    </div>    
+    </section>    
       <!-- END SERVICES -->
       
       <!-- CUSTOMERS -->
-        <div id="testimonials" class="our-clients">
+      <section id="testimonials" class="our-clients">
         <div class="container">
-                <div class="col-xs-12">
-                    <h4 class="heading">ΠΕΛΆΤΕΣ</h4>
-                </div>
+          <h4 class="heading">Οι πελάτες μας</h4>
+          <hr class="text-center" style="margin-bottom: 50px;">
                 <div class="nbs-flexisel-container">
                 <div class="nbs-flexisel-inner">
                 <ul class="flexiselDemo3 nbs-flexisel-ul" style="left: -253.6px; display: block;">
@@ -274,21 +318,20 @@
                     </script>
             </div>
                 <!---//End-signin---->
-        </div>
+      </section>
       <!-- END CUSTOMERS -->
       
       <!-- ARTICLES -->
-      <div id="articles" class="section" >
+      <section id="articles">
         <div class="container">
             <div class="row">
-                <h4 class="heading">ΑΡΘΡΑ</h4>
+                <h4 class="heading">Τα άρθρα</h4>
+              <hr class="text-center" style="margin-bottom: 50px;">
+                
                 <div class="col-md-10 col-md-offset-1">
                     <div id="review__carousel" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="review__item">
-                                <div class="review-item__quot">
-                                    Συνεχίζουμε τη θεματολογία του  πρακτικού οδηγού μας, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή ...
-                                </div>
                                 <div>
                                     <div class="review-item-about__avatar">
                                         <img class="img-responsive" src="../img/author_GX.png" alt="...">
@@ -302,13 +345,13 @@
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                                <div class="review-item__quot">
+                                    Συνεχίζουμε τη θεματολογία του  πρακτικού οδηγού μας, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή ...
+                                </div>
                             </div> <!-- / .review__item -->
                         </div>
                         <div class="item">
                             <div class="review__item">
-                                <div class="review-item__quot">
-                                    Καθώς λιγοστεύει ο χρόνος που απομένει μέχρι την καταληκτική ημερομηνία της προθεσμίας των δηλώσεων ...         
-                                </div>
                                 <div>
                                     <div class="review-item-about__avatar">
                                         <img class="img-responsive" src="../img/author_GX.png" alt="...">
@@ -321,13 +364,13 @@
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                                <div class="review-item__quot">
+                                    Καθώς λιγοστεύει ο χρόνος που απομένει μέχρι την καταληκτική ημερομηνία της προθεσμίας των δηλώσεων ...         
+                                </div>
                             </div> <!-- / .review__item -->
                         </div>
                         <div class="item">
                             <div class="review__item">
-                                <div class="review-item__quot">
-                                    Πως θα απαντήσετε στις ερωτήσεις, του πρώτου, του δεύτερου και του τρίτου πίνακα της φορολογικής δήλωσης ...
-                                </div>
                                 <div>
                                     <div class="review-item-about__avatar">
                                         <img class="img-responsive" src="../img/author_GX.png" alt="...">
@@ -340,13 +383,13 @@
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                                <div class="review-item__quot">
+                                    Πως θα απαντήσετε στις ερωτήσεις, του πρώτου, του δεύτερου και του τρίτου πίνακα της φορολογικής δήλωσης ...
+                                </div>
                             </div> <!-- / .review__item -->
                         </div>
                         <div class="item">
                             <div class="review__item">
-                                <div class="review-item__quot">
-                                   Συνεχίζουμε τη θεματολογία του πρακτικού οδηγού, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή της δήλωσης ...
-                                </div>
                                 <div>
                                     <div class="review-item-about__avatar">
                                         <img class="img-responsive" src="../img/author_GX.png" alt="...">
@@ -360,19 +403,24 @@
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
+                                <div class="review-item__quot">
+                                   Συνεχίζουμε τη θεματολογία του πρακτικού οδηγού, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή της δήλωσης ...
+                                </div>
                             </div> <!-- / .review__item -->
                         </div>
                     </div> <!-- / .review__carousel -->
                 </div>
             </div> <!-- / .row -->
         </div>
-      </div>
+      </section>
       <!-- END ARTICLES -->
       
       <!-- COMM -->
-      <div id="comm" class="section" >
-          <div class="row">
-            <h4 class="heading">ΕΠΙΚΟΙΝΩΝΊΑ</h4>
+      <section id="comm" >
+        
+          <div class="container text-center">
+            <h4 class="heading">Επικοινωνήστε μαζί μας</h4>
+            <hr class="text-center" style="margin-bottom: 50px;">
             <div id="outerMapDiv">
               <div id="googleMap" style="width:80%;height:250px;"></div>
             </div>
@@ -386,7 +434,7 @@
               </address>
             </div>
             </div>
-      </div>
+      </section>
       <!-- END COMM -->
       
       <!-- FOOTER -->
