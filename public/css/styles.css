@@ -1100,7 +1100,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #f67280;
+  color: red;
   text-decoration: none;
 }
 a:hover,
@@ -1145,7 +1145,7 @@ img {
   height: auto;
 }
 .img-circle {
-  border-radius: 50%;
+	padding-top:50px;
 }
 hr {
   margin-top: 23px;
@@ -7736,6 +7736,7 @@ footer a {
 }
 
 .nbs-flexisel-inner {
+	padding-top: 20px;
     overflow:hidden;
     float:left;
     width:100%;
