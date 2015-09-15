@@ -58,7 +58,7 @@
             var center = new google.maps.LatLng(38.0449898,23.8089678,17);
             var mapProp = {
                 center:center,
-                zoom:16,
+                zoom:13,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
             };
             var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -470,52 +470,47 @@
       
       <!-- COMM -->
       <section id="comm" >
-        <div class="overlay">
-          <div class="container text-center">
-          <div class="section-title center">
+        <div class="container">
+           <div class="section-title center">
               <h4 class="heading">Επικοινωνήστε μαζί μας</h4>
-              <div class="line">
-                  <hr>
-              </div>
+              <div class="line"><hr></div>
               <div class="clearfix"></div>
-          </div>
-            <div id="outerMapDiv">
-              <div id="googleMap" style="width:80%;height:250px;"></div>
+           </div>
+           <br>
+           <div class="row">
+                <div class="col-md-6 col-sm-6 text-right">
+                    <div id="googleMap" style="width:100%;height:200px;"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+	                <p>
+	                    Σωρού 14<br>Μαρούσι, Αττική, Ελλάδα<br>
+	                </p>
+	                <p><i class="fa fa-phone"></i> 
+	                   <abbr title="Τηλέφωνο">Τ</abbr>: (+30) 210 672 7149 / (+30) 210 672 1585
+	                </p>
+	                <p><i class="fa fa-envelope-o"></i> 
+	                   <abbr title="Email">E</abbr>: <a href="mailto:c.info@mental.gr">info@mental.gr</a>
+	                </p>
+	                <p><i class="fa fa-clock-o"></i> 
+	                   <abbr title="Ώρες επικοινωνίας">Ώ</abbr>: Δευτέρα - Παρασκευή: 9:00 πμ με 17:00 μ.μ.
+	                </p>
+	                <ul class="list-unstyled list-inline list-social-icons">
+	                    <li><a href="https://www.facebook.com/mentalgr?ref=hl"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+	                    <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+	                    <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+	                </ul>
+                </div>
             </div>
-            <div style="text-align: center">
-              <br>
-              <address>
-                <span style="color: crimson;">Σωρού 14, 151 25 Μαρούσι, Αττικής, Ελλάδα</span><br>
-                Τηλ./Telephone :<span style="color: crimson;"> (+30) 210 672 7149 / (+30) 210 672 1585</span><br>
-                Fax: <span style="color: crimson;">(+30) 210 674 8683</span><br>
-                E-mail: <a href="mailto:c.info@mental.gr">info@mental.gr</a>
-              </address>
-            </div>
-            </div>
-            </div>
+        </div>
       </section>
       <!-- END COMM -->
       
       <!-- FOOTER -->
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6" style="color: black">
-              &copy; 2015 Mental<strong style="color: red">GROUP</strong> S.A. All Rights Reserved.
-            </div>
-            <div class="col-sm-6">
-              <div class="footer__social">
-                <a href="#" class="footer-social__link footer-social__link_twitter">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/mentalgr?ref=hl" class="footer-social__link footer-social__link_facebook">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" class="footer-social__link footer-social__link_google-plus">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-              </div>
-            </div>
+        <div class="container text-center">
+          <div>
+            &copy; 2015 Mental<strong style="color: red">GROUP</strong> S.A. All Rights Reserved.
           </div>
         </div>
       </footer>
@@ -523,3 +518,10 @@
     </div>
   </body>
 </html>
+
+
+
+
+
+
+

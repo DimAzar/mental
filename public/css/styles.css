@@ -1567,36 +1567,11 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-.row {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -7031,17 +7006,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-#outerMapDiv {
-  height: 90%;
-  text-align:center;
-}
-#googleMap {
-  width: 70%;
-  height: 100%;
-  margin:0px auto;
-  display:inline-block
-}
-
 .clients {
   margin-top: 30px;
   margin-bottom: 90px;
@@ -7528,57 +7492,6 @@ body {
 .has-error .help-block,
 .has-error.help-block {
   display: block;
-}
-/**
- * Footer
- */
-footer {
-  margin-top: 40px;
-  padding: 40px 0;
-  background-color: #eee;
-  color: #9a9a9a;
-  line-height: 30px;
-  text-align: center;
-}
-footer a {
-  color: #9a9a9a;
-}
-.footer__social {
-  margin-top: 20px;
-}
-.footer-social__link {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 3px;
-  background-color: #bbb;
-  text-align: center;
-  color: #eee;
-  -webkit-transition: all 0.15s;
-  -o-transition: all 0.15s;
-  transition: all 0.15s;
-}
-.footer-social__link:hover,
-.footer-social__link:focus {
-  color: white;
-}
-.footer-social__link_twitter:hover {
-  background-color: #55acee;
-}
-.footer-social__link_facebook:hover {
-  background-color: #3b5998;
-}
-.footer-social__link_google-plus:hover {
-  background-color: #dd4b39;
-}
-@media (min-width: 768px) {
-  footer {
-    text-align: left;
-  }
-  .footer__social {
-    margin-top: 0;
-    text-align: right;
-  }
 }
 /**
  * Sign in & sign up
