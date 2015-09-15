@@ -226,7 +226,7 @@ footer a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    height: 700px;
+    min-height: 700px;
 }
 
 #testimonials, #company {
@@ -237,7 +237,9 @@ footer a {
     background-repeat: no-repeat;
 }
 
-
+#testimonials {
+	height: 700px;
+}
 
 /* TIMELINE */
 .timeline {
@@ -259,7 +261,6 @@ footer a {
 
 .timeline>li {
     position: relative;
-    margin-bottom: 50px;
     min-height: 50px;
 }
 
@@ -305,7 +306,7 @@ footer a {
     border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: red;
 }
 
 .timeline>li .timeline-image h4 {
@@ -363,7 +364,6 @@ footer a {
     }
 
     .timeline>li {
-        margin-bottom: 100px;
         min-height: 100px;
     }
 
@@ -376,9 +376,9 @@ footer a {
 
     .timeline>li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
+        width: 80px;
+        height: 80px;
+        margin-left: -42px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -404,9 +404,9 @@ footer a {
     }
 
     .timeline>li .timeline-image {
-        width: 115px;
-        height: 115px;
-        margin-left: -75px;
+        width: 95px;
+        height: 95px;
+        margin-left: -48px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -430,9 +430,9 @@ footer a {
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
+        width: 140px;
+        height: 140px;
+        margin-left: -72px;
     }
 
     .timeline>li .timeline-image h4 {
@@ -488,7 +488,7 @@ footer a {
     height: 100px;
     padding: 27px 25px;
     margin-bottom: 10px;
-    border-radius: 50%;
+    border-radius: 50%; 
     transition: all 0.5s;
 }
 
