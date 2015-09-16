@@ -7,6 +7,14 @@ Version:        0.0.1
 Created:        14/09/2015
 Last change:    14/09/2015
 -------------------------------------------------------------------*/
+.fading{   
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
+}
+
+section {
+    padding-top: 100px;	
+}
 
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -205,10 +213,28 @@ footer a {
     min-height: 900px;	
 }
 
-#home,
-#articles,
-#services {
+#home{
     background: url(../img/bg_1.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 700px;
+}
+
+#articles{
+    background: url(../img/bg_2.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 700px;
+}
+
+#services {
+    background: url(../img/bg_3.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

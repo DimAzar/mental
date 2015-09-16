@@ -1,5 +1,40 @@
 var mentalApp = angular.module('mentalApp', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate']);
 
+//MODULE CONFIGURATION
+mentalApp.config(function ($routeProvider) {
+	$routeProvider
+		.when('/',
+			{
+			controller: 'MentalController',
+			templateUrl: 'views/home'
+			})
+		.when('/company',
+			{
+			controller: 'MentalController',
+			templateUrl: 'views/company'
+			})
+		.when('/comm',
+			{
+			controller: 'MentalController',
+			templateUrl: 'views/communication'
+			})
+		.when('/articles',
+			{
+			controller: 'ArticlesController',
+			templateUrl: 'views/articles'
+			})
+		.when('/testimonials',
+			{
+			controller: 'CustomersController',
+			templateUrl: 'views/customers'
+			})
+		.when('/services',
+			{
+			controller: 'MentalController',
+			templateUrl: 'views/services'
+			})
+		.otherwise(	{redirectTo: '/'});
+});
 //ANGULAR-TRANSLATE - TRANSLATION (i18n) TABLES
 mentalApp.config(function ($translateProvider) {
 	  //ENGLISH TRANSLATIONs
