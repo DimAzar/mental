@@ -78,10 +78,9 @@ hr {
 footer {
   margin-top: 40px;
   padding: 40px 0;
-  background-color: rgba(213, 220, 230, 0.2);
-  color: #9a9a9a;
+  background-color: rgba(213, 220, 230, 0.5);
   line-height: 30px;
-  text-align: center;
+  text-align: left;
 }
 footer a {
   color: #9a9a9a;
@@ -205,10 +204,28 @@ footer a {
     min-height: 900px;	
 }
 
-#home,
-#articles,
-#services {
+#home {
     background: url(../img/bg_1.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 900px;
+}
+
+#articles {
+	background: url(../img/bg_2.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 700px;
+}
+
+#services{
+    background: url(../img/bg_3.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -225,7 +242,7 @@ footer a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 700px;
+    min-height: 500px;
 }
 
 /* TIMELINE */
