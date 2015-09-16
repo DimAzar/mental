@@ -213,6 +213,8 @@ footer a {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
+    min-height: 700px;
 }
 
 #testimonials, #company, #comm {
@@ -222,6 +224,8 @@ footer a {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
+    min-height: 700px;
 }
 
 /* TIMELINE */
@@ -287,10 +291,7 @@ footer a {
     width: 60px;
     height: 60px;
     margin-left: 10px;
-    border: 7px solid #f1f1f1;
-    border-radius: 100%;
     text-align: center;
-    background-color: red;
 }
 
 .timeline>li .timeline-image h4 {
@@ -506,12 +507,7 @@ footer a {
     transition: all 0.5s;
 }
 
-#company i.fa.fa-mobile, #services i.fa.fa-mobile {
-    font-size: 50px;
-    padding: 20px 25px;
-}
-
-#company .service:hover>i.fa, #services .service:hover>i.fa {
+#services .service:hover>i.fa {
     background: red;
     color: #ffffff;
 }
@@ -530,3 +526,40 @@ footer a {
 }
 
 /* END MAP COMMUNICATION */
+
+
+/* I18N */
+#i18n {
+    padding-top: 5px;	
+}
+
+#i18n .flag:hover>button.flagGR,
+#i18n .flag:hover>button.flagGB,
+#i18n .flag:hover>button.flagFR,
+#i18n .flag:hover>button.flagDE {
+    border: 1px solid rgb(255,255,255);
+}
+
+.flagGB, .flagDE, .flagFR, .flagGR{
+    width: 18px;
+    height:13px;
+    margin: 2px 0px 0px 10px;
+    display: block;
+}
+
+.flagDE {
+    background-image: url('../img/i18n/germanflag.png');
+}
+
+.flagGR {
+    background-image: url('../img/i18n/greekflag.png');
+}
+
+.flagFR {
+    background-image: url('../img/i18n/frenchflag.png');
+}
+
+.flagGB {
+    background-image: url('../img/i18n/ukflag.png');
+}
+/* END I18N */
