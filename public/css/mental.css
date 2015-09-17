@@ -7,10 +7,6 @@ Version:        0.0.1
 Created:        14/09/2015
 Last change:    14/09/2015
 -------------------------------------------------------------------*/
-.ng-enter {   
-    -webkit-animation: fadeIn 4s;
-    animation: fadeIn 4s;
-}
 
 section {
     padding-top: 100px;	
@@ -213,9 +209,8 @@ footer a {
     min-height: 900px;	
 }
 
-#home,
-#articles,
-#services {
+#home
+{
     background: url(../img/bg_1.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
@@ -225,6 +220,26 @@ footer a {
     min-height: 700px;
 }
 
+#articles
+{
+    background: url(../img/bg_2.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 700px;
+}
+
+#services {
+    background: url(../img/bg_3.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    min-height: 700px;
+}
 #testimonials, #company, #comm {
     background-color: rgba(213, 220, 230, 0.3);
     background: url(../img/MGlogo.jpg) center center / cover no-repeat;

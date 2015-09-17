@@ -21,100 +21,78 @@
     <!-- CSS Custom -->
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/mental.css" rel="stylesheet">
-    
-    <script src="../js/lib/jquery-1.11.2.js"></script>
-    <script defer src="../js/bootstrap/bootstrap.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-    <script defer src="../js/lib/angularjs/angular.js"></script>
-    <script defer src="../js/lib/angularjs/angular-route.js"></script>
-    <script defer src="../js/lib/angularjs/angular-resource.js"></script>
-    <script defer src="../js/lib/angularjs/angular-animate.js"></script>
-    <script defer src="../js/lib/angularjs/angular-translate.min.js"></script>
-    <script defer src="../js/lib/angularjs/ui-bootstrap-tpls-0.11.0.min.js"></script>
-    
-    <script defer src="../js/app/mental.js"  charset="utf-8"></script>
-    <script defer src="../js/app/directives.js"></script>
-    <script defer src="../js/app/factories.js"></script>
-    <script defer src="../js/app/controllers.js"></script>
+    <!-- JavaScript -->    
+    <script type="text/javascript" src="../js/lib/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
 
-    <script defer src="../js/custom.js"></script>
-    <script type="text/javascript" src="../js/lib/jquery.flexisel.js"></script>
+    <!-- AngularJS -->
+    <script defer type="text/javascript" src="../js/lib/angularjs/angular.js"></script>
+    <script defer type="text/javascript" src="../js/lib/angularjs/angular-route.js"></script>
+    <script defer type="text/javascript" src="../js/lib/angularjs/angular-resource.js"></script>
+    <script defer type="text/javascript" src="../js/lib/angularjs/angular-animate.js"></script>
+    <script defer type="text/javascript" src="../js/lib/angularjs/angular-translate.min.js"></script>
+    <script defer type="text/javascript" src="../js/lib/angularjs/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script defer type="text/javascript" src="../js/app/mental.js"  charset="utf-8"></script>
+    <script defer type="text/javascript" src="../js/app/directives.js"></script>
+    <script defer type="text/javascript" src="../js/app/factories.js"></script>
+    <script defer type="text/javascript" src="../js/app/controllers.js"></script>
+    <script defer type="text/javascript" src="../js/custom.js"></script>
+    
 
     <!-- JS Plugins -->
-    <script src="../js/plugins/smoothscroll.js"></script>
-    <script src="../js/plugins/jquery.waypoints.min.js"></script>
-    <script src="../js/plugins/wow.min.js"></script>
-    <script src="../js/plugins/owl.carousel.min.js"></script>
-    <script src="../js/plugins/jquery.peity.min.js"></script>
-    <script src="../js/plugins/lightbox.min.js"></script>
-    <script src="../js/plugins/contact.js"></script>
-
+    <script type="text/javascript" src="../js/lib/jquery.flexisel.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="../js/plugins/smoothscroll.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/wow.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/jquery.peity.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/lightbox.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/contact.js"></script>
   </head>
+
   <body data-spy="scroll" data-target=".navbar" data-offset="71" data-ng-app="mentalApp" data-context="${pageContext.request.contextPath}">
     <div>
       <!--  NAVBAR -->
-      <div class="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top js-navbar-top js-toggleClass customnav">
-        <div class="">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        <div id= "i18n" data-ng-controller="I18NController" class="pull-left">
-            <div class="flag">
-                <button  class="flagGR" data-ng-click="changeLanguage('gr')" ></button>
-            </div>
-            <div class="flag">
-                <button class="flagGB" data-ng-click="changeLanguage('en')"></button>
-            </div>
-            <div class="flag">
-                <button class="flagFR" data-ng-click="changeLanguage('fr')"></button>
-            </div>
-            <div class="flag">
-                <button class="flagDE" data-ng-click="changeLanguage('de')"></button>
-            </div>
-        </div>
-            <a class="navbar-brand" href="#home"><img src="../img/mental-group.png"></a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right ">
-              <li><a href="#company">{{ 'NAV_COMPANY' | translate}}</a></li>
-              <li><a href="#services">{{ 'NAV_SERVICES' | translate}}</a></li>
-              <li><a href="#testimonials">{{ 'NAV_TESTIMONIALS' | translate}}</a></li>
-              <li><a href="#articles">{{ 'NAV_ARTICLES' | translate}}</a></li>
-              <li><a href="#comm">{{ 'NAV_COMM' | translate}}</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+		<div class="wrapper">
+		  <nav class="navbar navbar-default navbar-fixed-top js-navbar-top js-toggleClass customnav">
+		    <div class="">
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <div class="pull-left">
+		          <div data-ng-include='"views/templates/i18n.jsp"'></div>
+		        </div>
+		        <a class="navbar-brand" href="#home"><img src="../../img/mental-group.png"></a>
+		      </div>
+		      <div id="navbar" class="collapse navbar-collapse">
+		        <ul class="nav navbar-nav navbar-right ">
+		          <li><a href="#company">{{ 'NAV_COMPANY' | translate}}</a></li>
+		          <li><a href="#services">{{ 'NAV_SERVICES' | translate}}</a></li>
+		          <li><a href="#testimonials">{{ 'NAV_TESTIMONIALS' | translate}}</a></li>
+		          <li><a href="#articles">{{ 'NAV_ARTICLES' | translate}}</a></li>
+		          <li><a href="#comm">{{ 'NAV_COMM' | translate}}</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+		</div>      
+      <!-- PARTIALS -->
+      <div>
+        <div data-ng-view></div>
       </div>
-      <!--  END NAVBAR -->
-      
-                <!-- Partials -->
-            <div>
-                <div data-ng-view class="fading"></div>
-            </div>
-      
+
       <!-- FOOTER -->
-      <footer>
-        <div class="container text-center">
-          <div>
-            &copy; 2015 Mental<strong style="color: red">GROUP</strong> S.A. All Rights Reserved.
-          </div>
-        </div>
-      </footer>
-      <!-- END FOOTER -->
+      <div>
+        <div data-ng-include='"views/templates/footer.jsp"'></div>
+      </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
-

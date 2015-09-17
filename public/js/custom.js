@@ -42,16 +42,6 @@ $('.wrapper .navbar-collapse').on('hide.bs.collapse', function () {
 });
 
 
-/* Sidebar */
-
-$(".js-toggle-sidebar").on('click', function() {
-    $(".wrapper").toggleClass("js-wrapper-aside");
-    $(".navbar").toggleClass("js-navbar-aside");
-    $(".sidebar").toggleClass("js-sidebar-aside");
-    return false;
-});
-
-
 /**
  * Smooth scroll to anchor
  */
@@ -93,74 +83,3 @@ $(document).ready(function() {
 
     });
 });
-
-
-/**
- * Doughnut charts :: Skills
- */
-
-/* Base donut styles */
-
-$.fn.peity.defaults.donut = {
-    delimiter: null,
-    fill: ["#F67280", "#eee"],
-    height: null,
-    innerRadius: 68,
-    radius: 70,
-    width: null
-};
-
-/* Animating donuts */
-
-$(document).ready(function() {
-    $(".js-skills__item_first").waypoint(function() {
-
-        setTimeout(function () {
-            $('.skills__item').css("visibility", "visible");
-        }, 11);
-
-        $('.skills-item__donut').each(function () {
-            var $this = $(this);
-
-            var updateChart = $this.peity('donut');
-            var text = "";
-            var i = 0;
-            var str = $this.html();
-            var arr = str.split("/");
-            var value = arr[0];
-            var maxValue = arr[1];
-            var step = value/100;
-
-            function myLoop() {
-                setTimeout(function () {
-
-                    text = i + "/" + maxValue;
-
-                    updateChart.text(text)
-                        .change()
-
-                    i = i + step;
-
-                    if (i <= value) myLoop();
-
-                }, 10)
-            }
-            myLoop();
-        });
-
-        this.destroy();
-
-    }, { offset: 'bottom-in-view' });
-});
-
-
-/**
- * Wow plugin bottom offset calculation
- */
-
-$(".wow").each(function() {
-    var wowHeight = $(this).height();
-    $(this).attr("data-wow-offset", wowHeight);
-});
-
-new WOW().init();
