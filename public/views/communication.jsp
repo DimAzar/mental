@@ -1,27 +1,3 @@
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var center = new google.maps.LatLng(38.0449898,23.8089678,17);
-            var mapProp = {
-                center:center,
-                zoom:13,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            var marker = new google.maps.Marker({
-                position: center,
-                map: map,
-                title: 'Σωρού 14, 151 25 Μαρούσι, Mental GRoup'
-            });
-
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
       <!-- COMM -->
       <section id="comm" >
         <div class="container">
@@ -59,4 +35,19 @@
         </div>
       </section>
       <!-- END COMM -->
+    <script>
+            var center = new google.maps.LatLng(38.0449898,23.8089678,17);
+            var mapProp = {
+                center:center,
+                zoom:13,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({
+                position: center,
+                map: map,
+                title: 'Σωρού 14, 151 25 Μαρούσι, Mental GRoup'
+            });
+
+    </script>
       

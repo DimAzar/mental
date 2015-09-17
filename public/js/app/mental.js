@@ -1,4 +1,4 @@
-var mentalApp = angular.module('mentalApp', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate']);
+var mentalApp = angular.module('mentalApp', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngAnimate']);
 
 //MODULE CONFIGURATION
 mentalApp.config(function ($routeProvider) {
