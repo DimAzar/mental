@@ -78,7 +78,7 @@ hr {
 /* SECTION HEADER  */
 .heading {
   position: relative;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 40px;
   font-weight: 700;
   font-family: Caviar;
@@ -235,6 +235,7 @@ footer a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
+    min-height: 800px;
 }
 
 #services {
@@ -244,7 +245,7 @@ footer a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 700px;    
+    min-height: 800px;    
 }
 #testimonials, #company, #comm {
     background-color: rgba(213, 220, 230, 0.3);
@@ -254,7 +255,7 @@ footer a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 600px;
+    min-height: 800px;
 }
 
 /* TIMELINE */

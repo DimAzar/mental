@@ -94,19 +94,20 @@
         </div>
       </section>
       <!-- END ARTICLES -->
-<script>    var owl = $("#review__carousel");
-owl.owlCarousel({
-
-    items:              2,
-    itemsDesktop:       [1199,2],
-    itemsDesktopSmall:  [991,2],
-    itemsTablet:        [768,2],
-    itemsTabletSmall:   false,
-    itemsMobile:        [479,1],
-    navigation : true,
-    slideSpeed: 600,
-    pagination: false,
-    navigationText: ['<i class="oi oi-arrow-left"></i>','<i class="oi oi-arrow-right"></i>']
-
-});
-</script>
+		<script>
+		    var owl = $("#review__carousel");
+		    owl.owlCarousel({
+		
+		    items:              2,
+		    itemsDesktop:       [1199,2],
+		    itemsDesktopSmall:  [991,2],
+		    itemsTablet:        [768,2],
+		    itemsTabletSmall:   false,
+		    itemsMobile:        [479,1],
+		    navigation : true,
+		    slideSpeed: 600,
+		    pagination: false,
+		    navigationText: ['<i class="oi oi-arrow-left"></i>','<i class="oi oi-arrow-right"></i>']
+		
+		});
+		</script>
