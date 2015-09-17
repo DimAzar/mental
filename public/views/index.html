@@ -70,7 +70,7 @@
 		        <div class="pull-left">
 		          <div data-ng-include='"views/templates/i18n.jsp"'></div>
 		        </div>
-		        <a class="navbar-brand" href="#home"><img src="../../img/mental-group.png"></a>
+		        <a class="navbar-brand" href="#home"><img class="brandImage" src="../img/mental-group.png"></a>
 		      </div>
 		      <div id="navbar" class="collapse navbar-collapse">
 		        <ul class="nav navbar-nav navbar-right ">
@@ -90,7 +90,7 @@
       </div>
 
       <!-- FOOTER -->
-      <div>
+      <div data-ng-show="showfooter">
         <div data-ng-include='"views/templates/footer.jsp"'></div>
       </div>
     </div>

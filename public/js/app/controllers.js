@@ -1,25 +1,29 @@
-mentalApp.controller('MentalController',[ '$scope', '$window', '$rootScope', 'DownloadService', function($scope, $window, $rootScope, downloadService) {
-	$scope.connected = false;
-	$rootScope.bgimg = "resources/img/lightWAIT.png";
-	$rootScope.ulyssesmsg = '';
-	
-	$scope.principal = 'unknown';
-
-	$scope.downloadReportFile = function (objectID) {
-		downloadService.downloadReport(objectID);
-	};
-
-}]);
-
 mentalApp.controller('I18NController', ['$scope', '$translate', function($scope, $translate) {
 	 $scope.changeLanguage = function (key) {
 	    $translate.use(key);
 	 };
 }]);
 
-mentalApp.controller('CustomersController',[ '$scope' , function($scope) {
+mentalApp.controller('HomeController',[ '$scope', '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = false;
 }]);
 
+mentalApp.controller('CompanyController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = true;
+}]);
 
-mentalApp.controller('ArticlesController',[ '$scope', function($scope) {
+mentalApp.controller('CustomersController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = true;
+}]);
+
+mentalApp.controller('ArticlesController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = true;
+}]);
+
+mentalApp.controller('CommController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = true;
+}]);
+
+mentalApp.controller('ServicesController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+	$rootScope.showfooter = true;
 }]);

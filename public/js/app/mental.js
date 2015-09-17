@@ -5,17 +5,17 @@ mentalApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/',
 			{
-			controller: 'MentalController',
+			controller: 'HomeController',
 			templateUrl: 'views/home'
 			})
 		.when('/company',
 			{
-			controller: 'MentalController',
+			controller: 'CompanyController',
 			templateUrl: 'views/company'
 			})
 		.when('/comm',
 			{
-			controller: 'MentalController',
+			controller: 'CommController',
 			templateUrl: 'views/communication'
 			})
 		.when('/articles',
@@ -30,7 +30,7 @@ mentalApp.config(function ($routeProvider) {
 			})
 		.when('/services',
 			{
-			controller: 'MentalController',
+			controller: 'ServicesController',
 			templateUrl: 'views/services'
 			})
 		.otherwise(	{redirectTo: '/'});

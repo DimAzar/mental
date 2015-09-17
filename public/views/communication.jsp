@@ -9,7 +9,7 @@
            <br>
            <div class="row">
                 <div class="col-md-6 col-sm-6 text-right">
-                    <div id="googleMap" style="width:100%;height:200px;"></div>
+                    <div id="googleMap" style="width:210px;height:200px;"></div>
                 </div>
 
                 <div class="col-md-6 col-sm-6 ">
