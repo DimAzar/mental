@@ -1,7 +1,7 @@
       
       <!--  LANDING PAGE -->
       <div id="home" class="hero hero_agency" >
-        <p>(envr: DEV - version 0.4 - i18n)</p>
+        <p>(envr: DEV - version 0.5.1 - multipage)</p>
         <div class="container">
           <div class="row landingText">
               <!-- Hero heading -->
