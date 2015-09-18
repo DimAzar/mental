@@ -84,8 +84,8 @@ ol ol {
 
  .brandImage {
    display: block;
-   height: 60px;
-   padding-left: 25px;
+   height: 70px;
+   padding-left: 20px;
      
  }
 .glyphicon {
@@ -820,13 +820,6 @@ footer a {
         margin-top: 16px;
         font-size: 13px;
         line-height: 18px;
-    }
-}
-
-@media(min-width:328px) {
-    .brandImage {
-      display: block;
-      padding-left: 30px;
     }
 }
 

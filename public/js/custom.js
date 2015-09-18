@@ -1,14 +1,3 @@
-/*------------------------------------------------------------------
- Project:        Landitt
- Author:         Yevgeny Simzikov
- URL:            http://simpleqode.com/
- https://twitter.com/YevSim
- https://www.facebook.com/simpleqode
- Version:        1.0.0
- Created:        27/05/2015
- Last change:    27/05/2015
- -------------------------------------------------------------------*/
-
 /**
  * Navigation
  */
@@ -42,6 +31,16 @@ $('.wrapper .navbar-collapse').on('hide.bs.collapse', function () {
 });
 
 
+/* Sidebar */
+
+$(".js-toggle-sidebar").on('click', function() {
+    $(".wrapper").toggleClass("js-wrapper-aside");
+    $(".navbar").toggleClass("js-navbar-aside");
+    $(".sidebar").toggleClass("js-sidebar-aside");
+    return false;
+});
+
+
 /**
  * Smooth scroll to anchor
  */
@@ -60,3 +59,37 @@ $(function() {
         }
     });
 });
+
+
+/**
+ * Own carousel :: Testimonials
+ */
+
+$(document).ready(function() {
+    var owl = $("#review__carousel");
+    owl.owlCarousel({
+     
+        items:              2,
+        itemsDesktop:       [1199,2],
+        itemsDesktopSmall:  [991,2],
+        itemsTablet:        [768,2],
+        itemsTabletSmall:   false,
+        itemsMobile:        [479,1],
+        navigation : true,
+        slideSpeed: 600,
+        pagination: false,
+        navigationText: ['<i class="oi oi-arrow-left"></i>','<i class="oi oi-arrow-right"></i>']
+
+    });
+});
+
+/**
+ * Wow plugin bottom offset calculation
+ */
+
+$(".wow").each(function() {
+    var wowHeight = $(this).height();
+    $(this).attr("data-wow-offset", wowHeight);
+});
+
+new WOW().init();

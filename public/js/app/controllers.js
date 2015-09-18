@@ -6,6 +6,7 @@ mentalApp.controller('I18NController', ['$scope', '$translate', function($scope,
 
 mentalApp.controller('HomeController',[ '$scope', '$rootScope', function($scope, $rootScope) {
 	$rootScope.showfooter = false;
+	$scope.version = "(envr: DEV - version 0.5.2 - multipage)";
 }]);
 
 mentalApp.controller('CompanyController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
