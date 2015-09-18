@@ -13,8 +13,9 @@ mentalApp.controller('CompanyController',[ '$scope' , '$rootScope', function($sc
 	$rootScope.showfooter = true;
 }]);
 
-mentalApp.controller('CustomersController',[ '$scope' , '$rootScope', function($scope, $rootScope) {
+mentalApp.controller('CustomersController',[ '$scope' , '$rootScope', 'CustomersList', function($scope, $rootScope, CustomersList) {
 	$rootScope.showfooter = true;
+	$scope.customers = CustomersList;
 }]);
 
 mentalApp.controller('ArticlesController',[ '$scope' , '$rootScope', function($scope, $rootScope) {

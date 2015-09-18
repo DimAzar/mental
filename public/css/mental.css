@@ -317,17 +317,18 @@ a:focus {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    text-align: left;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 50%;
   }
 }
 button,

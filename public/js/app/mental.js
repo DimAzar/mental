@@ -1,5 +1,29 @@
 var mentalApp = angular.module('mentalApp', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate', 'ngAnimate']);
 
+mentalApp.constant(
+		'CustomersList', [
+			{url: 'http://www.buldoza.gr/', src: '../img/customers/1.buldoza.jpg' , descr: 'asd'},
+			{url: 'http://www.pieralisi.com/gr/', src: '../img/customers/2. Pieralisi.png' , descr: 'asd'},
+			{url: 'http://www.moosend.com/', src: '../img/customers/3. moosend.jpg' , descr: ''},
+			{url: 'http://www.k-studio.gr/', src: '../img/customers/4. k-studio.png' , descr: ''},
+			{url: 'http://www.regency.gr/', src: '../img/customers/5. regency.gif' , descr: ''},
+			{url: 'http://www.oe-e.gr/oe/', src: '../img/customers/7. OEE.png' , descr: ''},
+			{url: 'http://www.epsilonnet.gr/', src: '../img/customers/8. epsilonnet.jpg' , descr: ''},
+			{url: 'http://www.e-forologia.gr/', src: '../img/customers/9. eforologia .png' , descr: ''},
+			{url: 'http://www.taxheaven.gr/', src: '../img/customers/10. taxheaven.png' , descr: ''},
+			{url: 'http://www.obe.gr/', src: '../img/customers/11. OBE.jpg' , descr: ''},
+			{url: 'http://www.ebna.gr/', src: '../img/customers/12. ebna.png' , descr: ''},
+			{url: 'http://www.eexot.gr/', src: '../img/customers/13. eexot.png' , descr: ''},
+			{url: 'http://www.laskaridou.gr/', src: '../img/customers/14.IAL.png' , descr: ''},
+			{url: 'http://www.stsmarine.gr/', src: '../img/customers/15. sts marine.jpg' , descr: ''},
+			{url: 'http://www.stsmarine.gr/', src: '../img/customers/16. sts academy.jpg' , descr: ''},
+			{url: 'http://www.safety.gr/', src: '../img/customers/17. safetymanagement.jpg' , descr: ''},
+			{url: 'http://www.coralenergy.gr/', src: '../img/customers/18. coral gas.jpg' , descr: ''},
+			{url: 'http://www.likinia.gr/', src: '../img/customers/19. likinia hotel.jpg' , descr: ''},
+			{url: 'http://www.verawang.com/', src: '../img/customers/20. Vera Wang.jpg' , descr: ''},
+	    ]
+);
+
 //MODULE CONFIGURATION
 mentalApp.config(function ($routeProvider) {
 	$routeProvider
