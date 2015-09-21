@@ -11,14 +11,14 @@ mentalApp.config(function ($translateProvider) {
 		  NAV_COMPANY : 'Εταιρεία',
 		  NAV_SERVICES : 'Υπηρεσίες',
 		  NAV_TESTIMONIALS : 'Οι πελάτες μας',
-		  NAV_ARTICLES : 'Αρθρα',
+		  NAV_ARTICLES : 'Αρθρογραφία',
 		  NAV_COMM : 'Επικοινωνία',
 		  
-		  HEADER_COMPANY : 'Η Εταιρεία μας',
-		  HEADER_SERVICES : 'Οι Υπηρεσίες μας',
+		  HEADER_COMPANY : 'Εταιρεία',
+		  HEADER_SERVICES : 'Υπηρεσίες',
 		  HEADER_TESTIMONIALS : 'Οι πελάτες μας',
 		  HEADER_ARTICLES : 'Αρθρογραφία',
-		  HEADER_COMM : 'Επικοινωνήστε μαζί μας',
+		  HEADER_COMM : 'Επικοινωνία',
 
 	  });
 
