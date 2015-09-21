@@ -6873,7 +6873,7 @@ body {
   font-size: 20px;
   margin-top: -40px;
   margin-bottom: 80px;
-  color: #9a9a9a;
+  color: black;
 }
 .heading__sub + .heading__btn {
   margin-top: -40px;
@@ -6903,112 +6903,6 @@ body {
 }
 .col-middle {
   vertical-align: middle;
-}
-/**
- * Hero
- */
-/* General */
-.hero {
-  position: relative;
-  padding: 170px 0 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc6c5b7b', endColorstr='#cc355c7d', GradientType=0);
-  content: "";
-}
-@media (min-width: 768px) {
-  .hero {
-    padding: 220px 0 150px;
-  }
-}
-.hero__heading {
-  margin-top: 0;
-  font-size: 30px;
-  color: crimson;
-}
-.hero__heading + .hero-heading__sub {
-  color: rgba(55, 55, 55, 0.9);
-}
-.hero__btn.btn-link {
-  color: rgba(55, 55, 55, 0.9);
-}
-/* Hero :: Agency */
-.hero_agency {
-  text-align: center;
-}
-
-/* Hero :: Sign Up */
-.hero_sign-up {
-  padding-bottom: 388px;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .hero_sign-up {
-    padding-bottom: 208px;
-  }
-}
-.hero__form {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  padding: 60px 0;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.hero__form .form-control {
-  border: 0;
-  font-size: 13px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
-}
-.hero__form button {
-  width: 100%;
-  margin-left: 2px;
-  padding: 9px 16px;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 0px;
-}
-@media (min-width: 768px) {
-  .hero__form button {
-    width: auto;
-  }
-}
-.hero-form__sign-in {
-  margin-top: 20px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-}
-/* Hero :: App */
-.hero_app {
-  background-image: url(../img/bg_2.jpg);
-  text-align: left;
-  overflow: hidden;
-}
-.hero__btn-app {
-  border-radius: 3px;
-}
-.hero__img {
-  position: absolute;
-  top: 90px;
-}
-.hero__img > img {
-  width: 100%;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.clients {
-  margin-top: 30px;
-  margin-bottom: 90px;
 }
 /**
  * Pricing

@@ -127,7 +127,7 @@ footer a {
 .navbar-default .navbar-nav > li > a,
 .navbar-nav > li > a {
   font-family: 'Caviar', sans-serif;
-  color: gray;
+  color: black;
 }
 
 .navbar-brand {
@@ -136,7 +136,9 @@ footer a {
 
 .customer {
     width: 80px;
-    height: 60px; 
+    height: 60px;
+    padding-left: 30px; 
+    padding-top: 15px;
 }
 
 /*  LANDING PAGE */
@@ -151,7 +153,7 @@ footer a {
 
 .hero {
   position: relative;
-  padding: 170px 0 100px;
+  padding-top: 170px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,12 +167,6 @@ footer a {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc6c5b7b', endColorstr='#cc355c7d', GradientType=0);
   content: "";
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding: 220px 0 150px;
-  }
 }
 
 /*SERVICES  */
@@ -201,48 +197,37 @@ footer a {
 
 /*SECTION BACKGROUNDS */
 #home {
-    min-height: 900px;	
-}
-
-#home {
-    background: url(../img/bg_1.jpg) center center / cover no-repeat;
+/*     background: url(../img/bg_1.jpg) center center / cover no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 900px;
 }
 
 #articles {
-	background: url(../img/bg_2.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 700px;
 }
 
 #services{
-    background: url(../img/bg_3.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 700px;
 }
 
 #testimonials, #company, #comm {
     background-color: rgba(213, 220, 230, 0.3);
-    background: url(../img/MGlogo.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     
-    min-height: 500px;
 }
 
 /* TIMELINE */
