@@ -61,6 +61,9 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px gray;
+  text-decoration: underline;
 }
 dfn {
   font-style: italic;

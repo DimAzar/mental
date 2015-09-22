@@ -76,12 +76,13 @@ hr {
  * Footer
  */
 footer {
-  margin-top: 40px;
-  padding: 40px 0;
-  background-color: rgba(213, 220, 230, 0.5);
+  padding: 10px 0;
+  color: white;
+  background-color: rgba(15,15,15,0.5);
   line-height: 30px;
   text-align: left;
 }
+
 footer a {
   color: #9a9a9a;
 }
@@ -196,38 +197,31 @@ footer a {
 }
 
 /*SECTION BACKGROUNDS */
-#home {
-/*     background: url(../img/bg_1.jpg) center center / cover no-repeat; */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-}
 
 #articles {
+    background: url(../img/MGlogo.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
 }
 
-#services{
+#services, body {
+	background: url(../img/MGlogo.jpg) center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    min-height: 500px;
 }
 
 #testimonials, #company, #comm {
-    background-color: rgba(213, 220, 230, 0.3);
+    background-color: rgba(240, 240, 240, 1);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    min-height: 450px;
 }
 
 /* TIMELINE */
@@ -464,6 +458,13 @@ footer a {
 
 
 /* SERVICES */
+.service-text {
+  font-size: 13px;
+  color: #382526;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
 .section-title hr{
     border-color: gray;
     border-width: 4px;
