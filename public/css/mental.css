@@ -237,8 +237,8 @@ footer a {
    background-color: rgba(200, 220, 230, 0.6);
 }
 
-#testimonials, #company, #comm {
-    background-color: rgba(213, 220, 230, 0.3);
+#testimonials {
+    background-color: rgba(213, 0, 0, 0.3);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
