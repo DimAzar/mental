@@ -3,7 +3,7 @@ var app            = express();
 var bodyParser     = require('body-parser');
 
 // set our port
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));

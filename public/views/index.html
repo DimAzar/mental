@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../img/MGlogoCLEAN.jpg">
 
-    <title>MentalGROUP S.A</title>
+    <title>MentalGROUP</title>
 
     <!-- CSS Plugins -->
     <link href="../css/plugins/animate.css" rel="stylesheet">
@@ -88,18 +88,11 @@
         <div id= "i18n" data-ng-controller="I18NController" class="pull-left">
             <div class="flag">
                 <button  class="flagGR" data-ng-click="changeLanguage('gr')" ></button>
-            </div>
-            <div class="flag">
                 <button class="flagGB" data-ng-click="changeLanguage('en')"></button>
-            </div>
-            <div class="flag">
                 <button class="flagFR" data-ng-click="changeLanguage('fr')"></button>
-            </div>
-            <div class="flag">
                 <button class="flagDE" data-ng-click="changeLanguage('de')"></button>
             </div>
         </div>
-            <a class="navbar-brand" href="#home"><img src="../img/mental-group.png"></a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right ">
@@ -116,20 +109,36 @@
       <!--  END NAVBAR -->
       
       <!--  LANDING PAGE -->
+      <div id="home" class="hero hero_agency" >
+        <div class="container">
+          <div class="row landingText">
+              <!-- Hero heading -->
+			  <a class="navbar-brand" href="#home"><img src="../img/mental-group.png"></a>
+				<br>
+              <!-- Hero subheading -->
+              <p class="heading__sub hero-heading__sub animated fadeInUp delay_1">
+                  {{ 'SITE_SUBHEADER' | translate }}
+              </p>
+
+              <!-- Hero buttons -->
+              <a href="#company" class="hero__btn btn btn-lg btn-link animated fadeInUp delay_2">{{ 'LANDING_MORE' | translate}}<br>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+              </a>
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
       <!--  END LANDING PAGE -->
       
       <section id="company" class="section">
-      <div id="home" class="hero hero_agency text-center" >
-        <p>(envr: DEV - version 0.4 - i18n)</p>
-        <div class="container">
-            <h1 class="heading hero__heading animated fadeInUp">{{ 'SITE_HEADING' | translate}}</h1>
-            <p class="heading__sub hero-heading__sub animated fadeInUp delay_1">
-                {{ 'SITE_SUBHEADER' | translate }}
-            </p>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
         <div class="container text-center">
+          <div class="section-title center">
+              <h4 class="heading">{{ 'HEADER_COMPANY' | translate}}</h4>
+              <div class="line">
                   <hr>
+              </div>
+              <div class="clearfix"></div>
+          </div>
           <p>Οι εταιρείες <strong>MENTAL ΣΥΜΒΟΥΛΕΥΤΙΚΗ Α.Ε.</strong> και <strong>Γ. ΧΡΙΣΤΟΠΟΥΛΟΣ &amp; ΣΥΝΕΡΓΑΤΕΣ Ε.Ε.</strong>, από το 1999 λειτουργούν ως ενιαίο group συμβούλων επιχειρήσεων <strong>(MENTAL GROUP)</strong>, έχοντας ως κύριες δραστηριότητες τους την παροχή λογιστικών, φοροτεχνικών, συμβουλευτικών και μελετητικών υπηρεσιών σε επιχειρήσεις (φυσικά ή νομικά πρόσωπα) και Οργανισμούς, με ιδιαίτερη έμφαση στους τομείς
              Της ίδρυσης και της οργάνωσης ή αναδιοργάνωσης τους.
              Της φοροτεχνικής εποπτείας και της λογιστικής τους παρακολούθησης.
@@ -143,7 +152,7 @@
              <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
-                        <img class="timeline-image" src="../img/MGlogoCLEAN.jpg">
+                        <i class="fa fa-sun-o"></i>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="subheading">Κάνοντας πράξη την ευελιξία</h4>
@@ -154,7 +163,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <img class="timeline-image" src="../img/MGlogoCLEAN.jpg">
+                        <i class="fa fa-pie-chart"></i>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="subheading">Με το παραπάνω σχήμα συνέργειας</h4>
@@ -165,7 +174,7 @@
                         </div>
                     </li>
                     <li>
-                        <img class="timeline-image" src="../img/MGlogoCLEAN.jpg"> 
+                        <i class="fa fa-archive"></i> 
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="subheading">Στοχεύουμε στρατηγικά</h4>
@@ -176,7 +185,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <img class="timeline-image" src="../img/MGlogoCLEAN.jpg">
+                        <i class="fa fa-calendar"></i>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
                             <h4 class="subheading">Με γνώμονα πάντα τις ανάγκες</h4>
@@ -193,33 +202,40 @@
       </section>
 
       <!-- SERVICES -->
-      <section id="services" class="text-left">
+      <section id="services" class="text-center">
         <div class="container">
             <div class="section-title center">
                 <h4 class="heading">{{ 'HEADER_SERVICES' | translate}}</h4>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="row text-center">
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 service ">
+                    <i class="fa fa-eur"></i>
+                    <h4><strong>Φοροτεχνικά Λογιστικά</strong></h4>
+                    <p>Επίβλεψη &amp;Συνολική Διαχείριση Λογιστηρίου<br>
+	                   Διαρκής Φορολογική Υποστήριξη - Διαγνωστικοί Φορολογικοί Έλεγχοι<br>
+	                   Διαχείριση Φορολογικών Ζητημάτων<br>
+	                   Διαχείριση Εργατικών &amp;Ασφαλιστικών Θεμάτων</p>
+                </div>
+
                 <div class="col-md-4 col-sm-6 service ">
                     <i class="fa fa-suitcase"></i>
                     <h4><strong>Διοικηση</strong></h4>
-                    <p class="service-text">Επιχειρηματική Στρατηγική &amp; Σχεδιασμός<br>
+                    <p>Επιχειρηματική Στρατηγική &amp; Σχεδιασμός<br>
                     Οργανωτική Ανάπτυξη &amp; Αναδιάρθρωση<br>
                     Ανασχεδιασμός Επιχειρηματικών Λειτουργιών<br>
                     Επιλεγμένες Εστιασμένες Συμβουλευτικές Υπηρεσίες Διοίκησης<br>
                     Επιλεγμένες Χρηματοοικονομικές Υπηρεσίες</p>
                 </div>
-                <div class="col-md-4 col-sm-6 service ">
-                    <i class="fa fa-eur"></i>
-                    <h4><strong>Φοροτεχνικά Λογιστικά</strong></h4>
-                    <p class="service-text">Επίβλεψη &amp;Συνολική Διαχείριση Λογιστηρίου<br>
-	                   Διαρκής Φορολογική Υποστήριξη - Διαγνωστικοί Φορολογικοί Έλεγχοι<br>
-	                   Διαχείριση Φορολογικών Ζητημάτων<br>
-	                   Διαχείριση Εργατικών &amp;Ασφαλιστικών Θεμάτων</p>
-                </div>
+
                 <div class="col-md-4 col-sm-6 service ">
                     <i class="fa fa-connectdevelop "></i>
                     <h4><strong>Αναπτυξη</strong></h4>
-                    <p class="service-text">Επιχορηγήσεις Επενδύσεων Επιχειρήσεων<br>
+                    <p>Επιχορηγήσεις Επενδύσεων Επιχειρήσεων<br>
                        Management Consulting<br>
                        Μετατροπές - Συγχωνεύσεις - Εξαγορές</p>
                 </div>
@@ -267,6 +283,7 @@
         </div>
       </section>
       <!-- END CUSTOMERS -->
+
       
       <!-- ARTICLES -->
       <section id="articles">
@@ -274,7 +291,12 @@
             <div class="row">
           <div class="section-title center">
               <h4 class="heading">{{ 'HEADER_ARTICLES' | translate}}</h4>
+              <div class="line">
+                  <hr>
+              </div>
+              <div class="clearfix"></div>
           </div>
+                
                 <div class="col-md-10 col-md-offset-1">
                     <div id="review__carousel" class="owl-carousel owl-theme">
                         <div class="item">
@@ -367,16 +389,18 @@
         <div class="container">
            <div class="section-title center">
               <h4 class="heading">{{ 'HEADER_COMM' | translate}}</h4>
+              <div class="line"><hr></div>
+              <div class="clearfix"></div>
            </div>
            <br>
            <div class="row">
                 <div class="col-md-6 col-sm-6 text-right">
-                    <div id="googleMap" style="width:100%;height:200px;"></div>
+                    <div id="googleMap"></div>
                 </div>
 
                 <div class="col-md-6 col-sm-6 ">
 	                <p>
-	                    Σωρού 14<br>Μαρούσι, Αττική, Ελλάδα<br>
+	                    Σωρού 14,<br> Μαρούσι 15115,<br>Αττική, Ελλάδα<br>
 	                </p>
 	                <p><i class="fa fa-phone"></i> 
 	                   <abbr title="Τηλέφωνο">Τ</abbr>: (+30) 210 672 7149 / (+30) 210 672 1585
@@ -387,22 +411,22 @@
 	                <p><i class="fa fa-clock-o"></i> 
 	                   <abbr title="Ώρες επικοινωνίας">Ώ</abbr>: Δευτέρα - Παρασκευή: 9:00 πμ με 17:00 μ.μ.
 	                </p>
-	                <ul class="list-unstyled list-inline list-social-icons">
-	                    <li><a href="https://www.facebook.com/mentalgr?ref=hl"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-	                    <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-	                    <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-	                </ul>
                 </div>
             </div>
         </div>
       </section>
       <!-- END COMM -->
+      
       <!-- FOOTER -->
       <footer>
-      <hr>
         <div class="container text-center">
           <div>
-            &copy; 2015 Mental<strong style="color: red">GROUP</strong> S.A. All Rights Reserved.
+            &copy; 2015 <strong>mental</strong><strong style="color: gray">GRoup</strong>  All Rights Reserved
+	                <ul class="list-unstyled list-inline">
+	                    <li><a href="https://www.facebook.com/mentalgr?ref=hl"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+	                    <!-- <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+	                    <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li> -->
+	                </ul>
           </div>
         </div>
       </footer>
@@ -410,3 +434,10 @@
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
