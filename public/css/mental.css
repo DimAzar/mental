@@ -65,7 +65,7 @@ section {
 }
 
 .heading {
-	text-align: center;
+  text-align: center;
   position: relative;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -80,7 +80,6 @@ section {
  * Footer
  */
 footer {
-  padding: 40px 0;
   background-color: rgba(213, 220, 230, 0.2);
   line-height: 30px;
 }
@@ -141,9 +140,11 @@ footer a {
 }
 
 .landingText {
+	color: red;
 	font-size: 24px;
 	text-align: center;
-    font-family: Caviar;    
+    font-family: Caviar;
+    font-weight: bold;    
 }
 
 .hero {
@@ -198,52 +199,26 @@ footer a {
 
 /*SECTION BACKGROUNDS */
 #home {
-	min-height: 800px;
+    min-height: 800px;
+	background: url(../img/bg_1.jpg) center center / cover no-repeat;
 }
-
-#home {
-    background: url(../img/bg_1.jpg) center center / cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
+#comm, #articles {
+    background: url(../img/MGlogo.jpg) center center / cover no-repeat;
 }
-
-#articles {
-	background-color: rgba(255, 255, 255, 1);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-}
-
 #services{
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#company , #articles{
+    /* background-color: rgba(213, 0, 0, 1); */
+    background-color: rgba(213, 220, 230, 0.2);
+}
+
+#home, #articles, #services, #comm, #testimonials  {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
-}
-
-#comm {
-	background: url(../img/MGlogo.jpg) center center / cover no-repeat;
-	
-}
-
-#company {
-   background-color: rgba(200, 220, 230, 0.6);
-}
-
-#testimonials {
-    background-color: rgba(213, 0, 0, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
 }
 
 /* TIMELINE */
@@ -347,7 +322,6 @@ footer a {
     color: inherit;
     font-family: Caviar;
     font-size: 22px;
-    font-style: italic;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -524,11 +498,18 @@ footer a {
     transition: all 0.5s;
 }
 
-#services .service:hover>i.fa {
-    background: red;
-    color: #ffffff;
+.service:hover>i.fa {
+    background: rgba(255, 0, 0, .9);
+    color: white;
 }
 
+.timeline-heading:hover>.subheading {
+}
+
+:hover>i.fa {
+    background: gray;
+    color: red;
+}
 /* END SERVICES */
 
 /* MAP COMMUNICATION */
@@ -541,7 +522,6 @@ footer a {
   height: 200px;
   display:inline-block
 }
-
 /* END MAP COMMUNICATION */
 
 

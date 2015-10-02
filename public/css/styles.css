@@ -4370,7 +4370,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: white;
 }
 .navbar-default .navbar-nav > li > a {
-  color: red;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -6679,9 +6679,6 @@ button.close {
 }
 .navbar-brand {
   font-weight: 700;
-}
-.navbar-default {
-  padding-top: 20px;
 }
 .navbar-inverse {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.12);
