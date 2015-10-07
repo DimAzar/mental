@@ -113,6 +113,22 @@ $.fn.peity.defaults.donut = {
 /* Animating donuts */
 
 $(document).ready(function() {
+	/* Switcher-box*/
+	$(document).ready(function(){
+		$('.open-switcher').click(function(){
+			if($(this).hasClass('show-switcher')) {
+				$('.switcher-box').css({'left': 0});
+				$('.open-switcher').removeClass('show-switcher');
+				$('.open-switcher').addClass('hide-switcher');
+			}else if(jQuery(this).hasClass('hide-switcher')) {
+				$('.switcher-box').css({'left': '-212px'});
+				$('.open-switcher').removeClass('hide-switcher');
+				$('.open-switcher').addClass('show-switcher');
+			}
+		});
+	});
+	
+
     $(".js-skills__item_first").waypoint(function() {
 
         setTimeout(function () {

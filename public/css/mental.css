@@ -140,7 +140,7 @@ footer a {
 }
 
 .landingText {
-	color: red;
+	color: gray;
 	font-size: 24px;
 	text-align: center;
     font-family: Caviar;
@@ -335,6 +335,12 @@ footer a {
     margin-bottom: 0;
 }
 
+@media(max-width:400px) {
+	.navbar-brand > img {
+	  height: 70px;
+	  padding-left: 0px;
+	}
+}
 @media(max-width:300px) {
     .timeline:before {
         left: 10%;
@@ -506,10 +512,6 @@ footer a {
 .timeline-heading:hover>.subheading {
 }
 
-:hover>i.fa {
-    background: gray;
-    color: red;
-}
 /* END SERVICES */
 
 /* MAP COMMUNICATION */
@@ -575,4 +577,97 @@ footer a {
 .delay_5 {
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
+}
+
+/******* Style Switcher *******/
+.switcher-box {
+    width: 212px;
+    position: fixed;
+    left: -212px;
+    top: 100px;
+    text-align: center;
+    z-index: 99999999;
+    background: rgba(213, 220, 230, 1) center no-repeat;
+
+    border-radius: 0 0 2px 0;
+    border-radius: 0 5px 5px 0;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.switcher-box a{
+    cursor: pointer;
+}
+.switcher-box h4 {
+    display: block;
+    height: 40px;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+    background-color: rgba(213, 220, 230, 1);
+    margin-bottom: 10px;
+}
+.switcher-box span {
+    display: block;
+    padding: 5px 20px;
+    text-align: left;
+}
+.switcher-box .layout-style, .switcher-box .topbar-style {
+    width: 172px;
+    padding: 6px 9px;
+    outline: none;
+    display: block;
+    background: #fff;
+    border-radius: 3px;
+    padding: 4px 6px;
+    color: #666;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 0 0 12px 20px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.06);
+}
+.switcher-box .bg-list {
+    padding: 0 18px 0 18px;
+    margin-bottom: 18px;
+}
+.switcher-box .bg-list li {
+    display: inline-block;
+    margin-right: 2px;
+}
+.switcher-box .bg-list li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.switcher-box .open-switcher {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 2px 2px 0;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.switcher-box .open-switcher:hover {
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    color: gray;
+}
+
+.switcher-box .open-switcher i {
+    text-align: center;
+    padding-top: 7px;
 }
