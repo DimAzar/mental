@@ -1,5 +1,20 @@
 var mentalApp = angular.module('mentalApp', ['ngRoute', 'ui.bootstrap', 'pascalprecht.translate']);
 
+mentalApp.config(function ($routeProvider) {
+	$routeProvider
+		.when('/',
+			{
+			controller: 'MentalController',
+			templateUrl: 'public/views/home'
+			})
+		.when('/news', 
+			{
+				controller: 'NewsController',
+				templateUrl: 'blog'
+			})
+		.otherwise(	{redirectTo: '/'});
+});
+
 //ANGULAR-TRANSLATE - TRANSLATION (i18n) TABLES
 mentalApp.config(function ($translateProvider) {
 	  //ENGLISH TRANSLATIONs
