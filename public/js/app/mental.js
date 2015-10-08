@@ -5,12 +5,12 @@ mentalApp.config(function ($routeProvider) {
 		.when('/',
 			{
 			controller: 'MentalController',
-			templateUrl: 'public/views/home'
+			templateUrl: 'group/home'
 			})
 		.when('/news', 
 			{
 				controller: 'NewsController',
-				templateUrl: 'blog'
+				templateUrl: 'group/blog'
 			})
 		.otherwise(	{redirectTo: '/'});
 });
