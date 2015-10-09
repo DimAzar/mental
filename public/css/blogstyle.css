@@ -37,6 +37,18 @@ ul{
 label{
 	margin:0;
 }
+
+/* GENERAL  */
+.bold {
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.italic {
+    font-style: italic;
+}
+
 /*-----start-header----*/
 .header{
 	background:#1a1a1a;
@@ -308,54 +320,6 @@ i.global{
 	font-weight: 300;
 	letter-spacing: 2px;
 	margin-bottom: 1em;
-}
-/*--clients--*/
-#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
-	display: none;
-}
-.nbs-flexisel-container {
-	position: relative;
-	max-width: 100%;
-}
-.nbs-flexisel-ul {
-	position: relative;
-	width: 9999px;
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-	text-align: center;
-}
-.nbs-flexisel-inner {
-	overflow: hidden;
-}
-.nbs-flexisel-item {
-	float: left;
-	margin: 0px;
-	padding: 0px;
-	cursor: pointer;
-	position: relative;
-}
-.nbs-flexisel-item > img {
-	position: relative;
-	max-width:300px;
-	max-height:100px;
-}
-/*** Navigation ***/
-.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
-	width: 40px;
-	height: 35px;
-	position: absolute;
-	cursor: pointer;
-	z-index: 100;
-	margin-top:9em;
-}
-.nbs-flexisel-nav-left {
-	left: 24em;
-	background: url('../img/img-sprite.png') no-repeat -75px -176px;
-}
-.nbs-flexisel-nav-right {
-	right: 24em;
-	background: url('../img/img-sprite.png') no-repeat -114px -176px;
 }
 /********************/
 /*-----*/
@@ -2784,9 +2748,9 @@ margin-bottom:3em;
 /*------------------------------------------*/
 
 .blog-post {
-    margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid #eee;
+    background-color: rgb(240, 240, 240);
 }
 
 .blog-post .post-head {
@@ -3177,7 +3141,3 @@ ul.post-meta li, ul.post-meta li a {
     font-weight: 500;
     margin-bottom: 15px;
 }
-
-
-
-

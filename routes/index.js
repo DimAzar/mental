@@ -4,18 +4,18 @@ module.exports = function(app) {
   });
 
   app.get('/mental/group', function(req, res) {
-	    res.sendfile('./public/views/index.html');
+	    res.sendfile('public/views/index.html');
+  });
+
+  app.get('/mental/group/home', function(req, res) {
+	    res.sendfile('public/views/partials/home.html'); // load our public/index.html file
   });
 
   app.get('/mental/single-post', function(req, res) {
-	    res.sendfile('./public/views/single-post.html'); // load our public/index.html file
-	  });
+	    res.sendfile('public/views/partials/single-post.html'); 
+  });
 
-  app.get('/mental/group/home', function(req, res) {
-	    res.sendfile('./public/views/home.html'); // load our public/index.html file
-	  });
-
-  app.get('/mental/news', function(req, res) {
-	    res.sendfile('./public/views/blog.html'); // load our public/index.html file
-	  });
+  app.get('/mental/group/blog', function(req, res) {
+	    res.sendfile('public/views/partials/blog.html'); 
+  });
 };
