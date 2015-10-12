@@ -4,3 +4,5 @@ node_modules
 .app.js.swp
 /.tern-project
 /npm-debug.log
+
+.settings
