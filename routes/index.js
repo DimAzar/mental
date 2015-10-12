@@ -11,7 +11,7 @@ module.exports = function(app) {
 	    res.sendfile('public/views/partials/home.html'); // load our public/index.html file
   });
 
-  app.get('/mental/single-post', function(req, res) {
+  app.get('/mental/group/single-post', function(req, res) {
 	    res.sendfile('public/views/partials/single-post.html'); 
   });
 
