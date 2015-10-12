@@ -2,3 +2,5 @@ node_modules
 .idea
 .project
 .app.js.swp
+/.tern-project
+/npm-debug.log
