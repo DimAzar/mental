@@ -37,18 +37,6 @@ ul{
 label{
 	margin:0;
 }
-
-/* GENERAL  */
-.bold {
-    font-weight: bold;
-}
-.red {
-    color: red;
-}
-.italic {
-    font-style: italic;
-}
-
 /*-----start-header----*/
 .header{
 	background:#1a1a1a;
@@ -945,12 +933,12 @@ p.m_7 {
 	width:60%;
 }
 .head_element span {
-	color: #fc5700;
-	font-size: 1.8em;
+	color: red;
+	font-size: 1.4em;
 	display: block;
 	margin: 0 auto;
-	text-transform: uppercase;
 }
+
 .sub{
 	float:left;
 	margin-top: 1.3em;

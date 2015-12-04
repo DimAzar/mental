@@ -73,7 +73,7 @@
     </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="71" data-ng-app="mentalApp" data-context="${pageContext.request.contextPath}">
-    <div >
+    <div data-ng-controller="MentalController">
       <!--  NAVBAR -->
       <div class="wrapper">
         <nav class="navbar navbar-default navbar-fixed-top js-navbar-top js-toggleClass">
@@ -86,7 +86,7 @@
               <span class="icon-bar"></span>
             </button>
         <div id= "i18n" data-ng-controller="I18NController" class="pull-left">
-            <div class="flag">
+            <div>
                 <button  class="flagGR" data-ng-click="changeLanguage('gr')" ></button>
                 <button class="flagGB" data-ng-click="changeLanguage('en')"></button>
                 <button class="flagFR" data-ng-click="changeLanguage('fr')"></button>
@@ -98,8 +98,8 @@
             <ul class="nav navbar-nav navbar-right ">
               <li><a href="#company">{{ 'NAV_COMPANY' | translate}}</a></li>
               <li><a href="#services">{{ 'NAV_SERVICES' | translate}}</a></li>
-              <li><a href="#testimonials">{{ 'NAV_TESTIMONIALS' | translate}}</a></li>
               <li><a href="#articles">{{ 'NAV_ARTICLES' | translate}}</a></li>
+              <li><a href="#testimonials">{{ 'NAV_TESTIMONIALS' | translate}}</a></li>
               <li><a href="#comm">{{ 'NAV_COMM' | translate}}</a></li>
             </ul>
           </div>
@@ -107,23 +107,15 @@
       </nav>
       </div>
       <!--  END NAVBAR -->
-      
+
       <!--  LANDING PAGE -->
-      <div id="home" class="hero hero_agency" >
-      
-        <!-- Style Switcher -->
-        <div class="switcher-box">
-          <a class="open-switcher show-switcher"><i class="fa fa-newspaper-o fa-2x"></i></a>
-          <h4>Mental News</h4>
-          <span>
-            <a href="#/news">rgba(213, 220, 230, 0.5)</a>
-          </span>
-        </div>
-              
+
+      <div id="home" class="hero hero_agency">
+
         <div class="container">
           <div class="row landingText">
               <!-- Hero heading -->
-              <a class="navbar-brand" href="#home"><img src="../img/mental-group.png"></a>
+              <a class="navbar-brand" href="#home"><img src="../img/logo2.png"></a>
                 <br>
               <!-- Hero subheading -->
               <p class="heading__sub animated fadeInUp delay_1">
@@ -131,6 +123,9 @@
               </p>
 
               <!-- Hero buttons -->
+      <div class="text-center">
+        <a style="background-color:gray; font-size: 18px;" href="/mental/group/latest" class="btn btn-lg btn-link animated fadeInUp ">Latest News</a>
+      </div>
               <a href="#company" class="btn btn-lg btn-link animated fadeInUp delay_2">{{ 'LANDING_MORE' | translate}}<br>
                 <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
               </a>
@@ -144,9 +139,6 @@
         <div class="container text-center">
           <div class="section-title center">
               <h4 class="heading">{{ 'HEADER_COMPANY' | translate}}</h4>
-              <div class="line">
-                  <hr>
-              </div>
               <div class="clearfix"></div>
           </div>
           <p>Οι εταιρείες <strong>MENTAL ΣΥΜΒΟΥΛΕΥΤΙΚΗ Α.Ε.</strong> και <strong>Γ. ΧΡΙΣΤΟΠΟΥΛΟΣ &amp; ΣΥΝΕΡΓΑΤΕΣ Ε.Ε.</strong>, από το 1999 λειτουργούν ως ενιαίο group συμβούλων επιχειρήσεων <strong>(MENTAL GROUP)</strong>, έχοντας ως κύριες δραστηριότητες τους την παροχή λογιστικών, φοροτεχνικών, συμβουλευτικών και μελετητικών υπηρεσιών σε επιχειρήσεις (φυσικά ή νομικά πρόσωπα) και Οργανισμούς, με ιδιαίτερη έμφαση στους τομείς
@@ -161,48 +153,14 @@
           <div><br>
              <div class="col-lg-12">
                 <ul class="timeline">
-                    <li>
-                        <i class="fa fa-sun-o"></i>
-                        
+                    <li data-ng-class="{{skill.alignment}}" data-ng-repeat="skill in skills">
+                        <i class="fa" data-ng-class="{{skill.icon}}"></i>
                         <div class="timeline-panel">
                           <div class="timeline-heading">
-                            <h4 class="subheading">Κάνοντας πράξη την ευελιξία</h4>
+                            <h4 class="subheading">{{ skill.heading }}</h4>
                           </div>
                           <div class="timeline-body">
-                              <p>για την ικανοποίηση των παραπάνω αναγκών των πελατών μας, λειτουργούμε με τρία συνεργαζόμενα αλλά διακριτά τμήματα παροχής υπηρεσιών (Λογιστικό – Φοροτεχνικό/Συμβουλευτικό και Μελετητικό), γεγονός που επιτρέπει στους έμπειρους συνεργάτες μας να δραστηριοποιούνται συστηματικά στον τομέα ειδίκευσής τους, ενώ παράλληλα να έχουν άμεσα τη δυνατότητα στενής συνεργασίας με τους συναδέλφους τους από άλλες ειδικότητες, όταν και όποτε αυτό απαιτείται.</p>
-                          </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <i class="fa fa-pie-chart"></i>
-                        <div class="timeline-panel">
-                          <div class="timeline-heading">
-                            <h4 class="subheading">Με το παραπάνω σχήμα συνέργειας</h4>
-                          </div>
-                          <div class="timeline-body">
-                              <p>προσφέρουμε ολοκληρωμένες υπηρεσίες, εξατομικευμένες συμβουλές και εμπεριστατωμένες λύσεις, πάντα με γνώμονα την επίτευξη ουσιαστικών και μετρήσιμων, θετικών αποτελεσμάτων για τον πελάτη.</p>
-                          </div>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa fa-archive"></i> 
-                        <div class="timeline-panel">
-                          <div class="timeline-heading">
-                            <h4 class="subheading">Στοχεύουμε στρατηγικά</h4>
-                          </div>
-                          <div class="timeline-body">
-                              <p>όχι μόνο στην επίλυση των όποιων προβλημάτων αντιμετωπίζουν οι επιχειρήσεις σήμερα, αλλά και στην ανάδειξη και αξιοποίηση νέων ευκαιριών που πιθανόν να βρίσκονται μέσα στην ίδια την επιχειρηματική οντότητα, τo τοπικό ή και το διεθνές περιβάλλον στο οποίο αυτή δραστηριοποιείται.</p>
-                          </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <i class="fa fa-calendar"></i>
-                        <div class="timeline-panel">
-                          <div class="timeline-heading">
-                            <h4 class="subheading">Με γνώμονα πάντα τις ανάγκες</h4>
-                          </div>
-                          <div class="timeline-body">
-                              <p>της εκάστοτε επιχείρησης και εφαλτήριο τον υψηλό επαγγελματισμό, την κατάρτιση και την εμπειρία μας, τα τελευταία 15 χρόνια διασφαλίζουμε την απόλυτη ικανοποίηση των πελατών μας, καθώς και την επιτυχή ολοκλήρωση του συνόλου των έργων τα οποία αναλαμβάνουμε.</p>
+                              <p>{{ skill.text }}</p>
                           </div>
                         </div>
                     </li>
@@ -217,9 +175,6 @@
         <div class="container">
             <div class="section-title center">
                 <h4 class="heading">{{ 'HEADER_SERVICES' | translate}}</h4>
-                <div class="line">
-                    <hr>
-                </div>
                 <div class="clearfix"></div>
             </div>
             <div class="space"></div>
@@ -261,90 +216,29 @@
             <div class="row">
           <div class="section-title center">
               <h4 class="heading">{{ 'HEADER_ARTICLES' | translate}}</h4>
-              <div class="line">
-                  <hr>
-              </div>
               <div class="clearfix"></div>
           </div>
                 <div class="col-md-10 col-md-offset-1">
                     <div id="review__carousel" class="owl-carousel owl-theme">
-                        <div class="item">
+                        <div class="item" data-ng-repeat="article in articles">
                             <div class="review__item">
                                 <div>
                                     <div class="review-item-about__avatar">
-                                        <img class="img-responsive" src="../img/author_GX.png" alt="...">
+                                        <img class="img-responsive" src="{{ article.authorimg }}" alt="...">
                                     </div>
                                     <div class="review-item-about__content">
-                                        <div class="review-item-about__name">Γ. Χριστόπουλος</div>
+                                        <div class="review-item-about__name"> {{article.authorname}}</div>
                                         <div class="review-item-about__position">
-                                        <a target="_self" href="http://www.capital.gr/capitaltax/3051044/agrotiko-kai-epixeirimatiko-eisodima" ><strong>Αγροτικό και επιχειρηματικό εισόδημα</strong></a>
+                                        <a target="_self" href="{{article.url}}" ><strong>{{article.title}}</strong></a>
                                         <!-- <a target="_self" href="uploads/1.pdf" download="article1.pdf">This is a preview sentence ...</a> -->
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="review-item__quot">
-                                    Συνεχίζουμε τη θεματολογία του  πρακτικού οδηγού μας, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή ...
+                                    {{article.shortdescr}}
                                 </div>
                             </div> <!-- / .review__item -->
-                        </div>
-                        <div class="item">
-                            <div class="review__item">
-                                <div>
-                                    <div class="review-item-about__avatar">
-                                        <img class="img-responsive" src="../img/author_GX.png" alt="...">
-                                    </div>
-                                    <div class="review-item-about__content">
-                                        <div class="review-item-about__name">Γ. Χριστόπουλος</div>
-                                        <div class="review-item-about__position">
-                                            <a target="_self" href="http://www.capital.gr/story/3048711" ><strong>Τα βασικά της φορολογικής δήλωσης</strong></a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="review-item__quot">
-                                    Καθώς λιγοστεύει ο χρόνος που απομένει μέχρι την καταληκτική ημερομηνία της προθεσμίας των δηλώσεων ...         
-                                </div>
-                            </div> <!-- / .review__item -->
-                        </div>
-                        <div class="item">
-                            <div class="review__item">
-                                <div>
-                                    <div class="review-item-about__avatar">
-                                        <img class="img-responsive" src="../img/author_GX.png" alt="...">
-                                    </div>
-                                    <div class="review-item-about__content">
-                                        <div class="review-item-about__name">Γ. Χριστόπουλος</div>
-                                        <div class="review-item-about__position">
-                                            <a target="_self" href="http://www.capital.gr/capitaltax/3050079/apantiste-sosta-stis-erotiseis-tis-dilosis" ><strong>Απαντήστε σωστά στις ερωτήσεις της δήλωσης</strong></a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="review-item__quot">
-                                    Πως θα απαντήσετε στις ερωτήσεις, του πρώτου, του δεύτερου και του τρίτου πίνακα της φορολογικής δήλωσης ...
-                                </div>
-                            </div> <!-- / .review__item -->
-                        </div>
-                        <div class="item">
-                            <div class="review__item">
-                                <div>
-                                    <div class="review-item-about__avatar">
-                                        <img class="img-responsive" src="../img/author_GX.png" alt="...">
-                                    </div>
-                                    <div class="review-item-about__content">
-                                        <div class="review-item-about__name">Γ. Χριστόπουλος</div>
-                                        <div class="review-item-about__position">
-                                            <a target="_self" href="http://www.capital.gr/capitaltax/3050772/pos-dilonontai-ta-eisodimata" ><strong>Πως δηλώνονται τα εισοδήματα</strong></a>
-                                        </div>
-
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="review-item__quot">
-                                   Συνεχίζουμε τη θεματολογία του πρακτικού οδηγού, με σκοπό να συμβάλει και να βοηθήσει στην ορθή υποβολή της δήλωσης ...
-                                </div>
-                           </div> <!-- / .review__item -->
                         </div>
                     </div> <!-- / .review__carousel -->
                 </div>
@@ -359,36 +253,12 @@
           <div class="section-title center">
               <h4 class="heading">{{ 'HEADER_TESTIMONIALS' | translate}}</h4>
           </div>
-        <div class="row">
-          <div class="our-clients">
-            <div data-appeared-items="5" data-navigation="true">
-              <div class="item">
-                <a href="http://www.buldoza.gr/"><img src="../img/customers/1.buldoza.jpg" class="customer"></a>
-                <a href="http://www.pieralisi.com/gr/"><img src="../img/customers/2. Pieralisi.png" class="customer"></a>
-                <a href="http://www.moosend.com/"><img src="../img/customers/3. moosend.jpg" class="customer"></a>
-                <a href="http://www.k-studio.gr/"><img src="../img/customers/4. k-studio.png" class="customer"></a>
-                <a href="http://www.regency.gr/"><img src="../img/customers/5. regency.gif" class="customer"></a>
-                <a href="http://despotopoulos.com/"><img src="../img/customers/6. despotopoulos.png" class="customer"></a>
-                <a href="http://www.oe-e.gr/oe/"><img src="../img/customers/7. OEE.png" class="customer"></a>
-                <a href="http://www.epsilonnet.gr/"><img src="../img/customers/8. epsilonnet.jpg" class="customer"></a>
-                <a href="http://www.e-forologia.gr/"><img src="../img/customers/9. eforologia .png" class="customer"></a>
-                <a href="http://www.taxheaven.gr/"><img src="../img/customers/10. taxheaven.png" class="customer"></a>
-                <a href="http://www.obe.gr/"><img src="../img/customers/11. OBE.jpg" class="customer"></a>
-                <a href="http://www.ebna.gr/"><img src="../img/customers/12. ebna.png" class="customer"></a>
-                <a href="http://www.eexot.gr/"><img src="../img/customers/13. eexot.png" class="customer"></a>
-                <a href="http://www.laskaridou.gr/"><img src="../img/customers/14.IAL.png" class="customer"></a>
-                <a href="http://www.stsmarine.gr/"><img src="../img/customers/15. sts marine.jpg" class="customer"></a>
-                <a href="http://www.stsmarine.gr/"><img src="../img/customers/16. sts academy.jpg" class="customer"></a>
-                <a href="http://www.safety.gr/"><img src="../img/customers/17. safetymanagement.jpg" class="customer"></a>
-                <a href="http://www.coralenergy.gr/"><img src="../img/customers/18. coral gas.jpg" class="customer"></a>
-                <a href="http://www.likinia.gr/"><img src="../img/customers/19. likinia hotel.jpg" class="customer"></a>
-                <a href="http://www.verawang.com/"><img src="../img/customers/20. Vera Wang.jpg" class="customer"></a>
-              </div>
+          <div class="col-md-1 our-clients" data-ng-repeat="customer in customers">
+            <div class="text-center animated fadeIn" >
+                <a title="{{ customer.descr }}" href="{{ customer.url }}"><img src="{{ customer.src }}" class="customer"></a>
             </div>
           </div>
-        </div>
-        <!-- .row -->
-          
+          <div class="col-md-2 col-sm-6"></div>
         </div>
       </section>
       <!-- END CUSTOMERS -->
@@ -396,48 +266,27 @@
       <!-- COMM -->
       <section id="comm" >
         <div class="container">
-           <div class="section-title center">
-              <h4 class="heading">{{ 'HEADER_COMM' | translate}}</h4>
-              <div class="line"><hr></div>
-              <div class="clearfix"></div>
-           </div>
-           <br>
-           <div class="row">
-                <div class="col-md-6 col-sm-6 text-right">
-                    <div id="googleMap"></div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 ">
-                    <p>
-                        Σωρού 14,<br> Μαρούσι 15115,<br>Αττική, Ελλάδα<br>
-                    </p>
-                    <p><i class="fa fa-phone"></i> 
-                       <abbr title="Τηλέφωνο">Τ</abbr>: (+30) 210 672 7149 / (+30) 210 672 1585
-                    </p>
-                    <p><i class="fa fa-envelope-o"></i> 
-                       <abbr title="Email">E</abbr>: <a href="mailto:c.info@mental.gr">info@mental.gr</a>
-                    </p>
-                    <p><i class="fa fa-clock-o"></i> 
-                       <abbr title="Ώρες επικοινωνίας">Ώ</abbr>: Δευτέρα - Παρασκευή: 9:00 πμ με 17:00 μ.μ.
-                    </p>
-                </div>
+          <div class="section-title center">
+             <h4 class="heading">{{ 'HEADER_COMM' | translate}}</h4>
+             <div class="clearfix"></div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-right">
+              <div id="googleMap"></div>
             </div>
+            <div class="col-md-6 col-sm-6 ">
+              <p>Σωρού 14, Μαρούσι 15115<br> Αττική, Ελλάδα<br></p><br>
+              <p><i class="fa fa-phone"></i><abbr title="Τηλέφωνο"> Τ</abbr>: (+30) 210 672 7149 / (+30) 210 672 1585</p>
+              <p><i class="fa fa-envelope-o"></i><abbr title="Email"> E</abbr>: <a href="mailto:c.info@mental.gr">info@mental.gr</a>
+              <p><i class="fa fa-clock-o"></i><abbr title="Ώρες επικοινωνίας"> Ώ</abbr>: Δευτέρα - Παρασκευή: 9:00 - 17:00.
+            </div>
+          </div>
         </div>
       </section>
       <!-- END COMM -->
-      
+
       <!-- FOOTER -->
-      <footer>
-      <hr>
-        <div class="container text-center">
-          <div>
-            &copy; 2015 <strong>mental</strong><strong style="color: gray">GRoup</strong>  All Rights Reserved
-            <ul class="list-unstyled list-inline">
-                <li><a href="https://www.facebook.com/mentalgr?ref=hl"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <div data-ng-include='"group/templates/footer.jsp"'></div>
       <!-- END FOOTER -->
     </div>
   </body>

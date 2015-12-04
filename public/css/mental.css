@@ -14,9 +14,10 @@ html {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif, Caviar;
   font-size: 14px;
   line-height: 1.8;
-  color: black;
+  color: #565656;
   background-color: #ffffff;
   margin: 0;
 }
@@ -29,6 +30,18 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0; 
+}
+
+
+/* GENERAL  */
+.bold {
+    font-weight: bold;
+}
+.red {
+    color: red;
+}
+.italic {
+    font-style: italic;
 }
 
 /* BASIC */
@@ -67,7 +80,7 @@ section {
 .heading {
   text-align: center;
   position: relative;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 40px;
   font-weight: 700;
   font-family: Caviar;
@@ -208,6 +221,10 @@ footer a {
 }
 #services{
 	background-color: rgba(255, 255, 255, 1);
+}
+#news{
+    background-color: rgba(245, 245, 245, 1);
+    padding-bottom: 0px;
 }
 
 #company , #articles{
@@ -534,7 +551,6 @@ footer a {
 }
 
 .flagGB, .flagDE, .flagFR, .flagGR{
-    width: 18px;
     height:13px;
     margin: 24px 0px 0px 2px;
 }
