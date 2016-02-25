@@ -13,6 +13,9 @@ app.use(express.static(__dirname + '/public'));
 require('./routes')(app); // configure our routes
 
 app.listen(port);
-console.log('Magic happens on port ' + port);
+console.log('Mental \'SPA\' running on port: \'' + port + '\'.');
+console.log('To change this one can set environmental variable PORT. ');
+console.log('(eg. Unix-> export PORT=1234, Win-> set PORT=1234)');
+console.log('Aza.');
 
 exports = module.exports = app;
